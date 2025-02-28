@@ -5,186 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Performance Report</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/marked@3.0.7/marked.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Load React -->
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    
+    <!-- Load Babel -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body class="bg-gray-100">
-    <!-- Navigation -->
-    <div class="nav-container">
-        <div class="nav-content">
-            <div class="nav-title">Performance Reports</div>
-            <div class="nav-links">
-                <a href="index.html" class="nav-link">Dashboard</a>
-                <a href="report.html" class="nav-link">Performance Report</a>
-                <a href="tickets.html" class="nav-link">Grouped Tickets</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg">
-        <div id="report-content" class="prose max-w-none"></div>
-    </div>
+    <div id="navigation"></div>
+    <div id="root" class="max-w-6xl mx-auto p-4 bg-white rounded-lg shadow-lg"></div>
     
-    <script src="navigation.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const reportContent = `
-# Performance Report - Khanya Kupelo
-
-## Executive Summary
-
-This report provides a comprehensive analysis of Khanya Kupelo's performance based on the Jira ticket data. With 55 tickets assigned, Khanya has demonstrated exceptional productivity and efficiency, achieving a completion rate of 92.7%. Most notably, Khanya successfully delivered seven key projects including the NI Migration project, VB Top 6 Activation project, PWA Send Free SMS, 1App Recharge with Pin Journey, Summer 2024, Apollo Federation Migration, and the Storybook Implementation initiative that is now part of the Vodacom Design System.
-
-The data reflects strong technical implementation skills, effective problem-solving capabilities, and consistent delivery across various task types, predominantly focused on development and maintenance work. This report highlights key achievements, analyzes ticket distribution, and provides recommendations for continued growth.
-
-## Cross-Squad Impact
-
-Khanya's work has demonstrated remarkable versatility by contributing to four different squads across the organization:
-
-1. **1App Squad**: Led development efforts for Summer 2024 campaign, Recharge with Pin Journey, and Apollo Federation Migration
-2. **Fibre Squad**: Implemented 1App Homepage Redesign and developed mobile upsell functionality for fiber profiles
-3. **Vodacom Business Squad**: Integrated with business systems and enhanced service offerings
-4. **Services Squad**: Led the NI Migration project for the Pay My Bill service and improved core infrastructure 
-
-This cross-squad impact showcases Khanya's ability to quickly adapt to different technical environments and collaborate effectively across various business domains.
-
-## Key Accomplishments
-
-### 1. NI Migration Project
-- **Duration**: February 10-17, 2025 (7 days)
-- **Status**: Successfully Completed
-- **Description**: This project involved migrating the NI components to the new system infrastructure, requiring deep technical knowledge and careful implementation to ensure zero data loss.
-- **Outcomes**:
-  - Completed the project ahead of the estimated timeline
-  - Implemented robust validation checks to verify data integrity
-  - Ensured seamless transition with minimal disruption to services
-
-### 2. VB Top 6 Activation
-- **Duration**: February 19-28, 2025 (9 days)
-- **Status**: Successfully Completed
-- **Description**: This project focused on activating all VB Top 6 components according to business requirements and technical specifications.
-- **Outcomes**:
-  - Successfully configured and deployed all activation parameters
-  - Implemented optimization opportunities that improved process efficiency
-  - Provided comprehensive documentation for future reference
-
-### 3. PWA Send Free SMS (PAPP-3652)
-- **Duration**: November 21, 2023 - May 3, 2024 (165 days)
-- **Status**: Successfully Completed
-- **Description**: This complex project involved building the Send Free SMS functionality on the PWA platform, requiring extensive integration work and user experience optimization.
-- **Outcomes**:
-  - Developed a fully functional free SMS service for PWA users
-  - Addressed and resolved multiple technical challenges throughout the development lifecycle
-  - Successfully implemented user-friendly interfaces for managing contacts and sending messages
-
-### 4. 1App Recharge with Pin Journey (PAPP-5108)
-- **Duration**: June 4, 2024 - September 5, 2024 (93 days)
-- **Status**: Successfully Completed
-- **Description**: This project covered implementing the Recharge with Voucher Pin journey in the MVA container on Vodapay, involving lift and shift from the My Vodacom App.
-- **Outcomes**:
-  - Successfully migrated functionality from existing platform
-  - Enhanced user experience for recharge process
-  - Ensured consistent functionality across platforms
-
-### 5. Summer 2024 (PAPP-5791)
-- **Duration**: August 28, 2024 - September 9, 2024 (12 days)
-- **Status**: Successfully Completed
-- **Description**: This project focused on implementing onboarding flows and opt-in functionality for users.
-- **Outcomes**:
-  - Created seamless user experience for summer campaign features
-  - Implemented opt-in functionality compliant with regulatory requirements
-  - Enhanced user engagement through improved campaign interfaces
-
-### 6. Apollo Federation Migration (PAPP-4955)
-- **Duration**: May 16, 2024 - June 10, 2024 (26 days)
-- **Status**: Successfully Completed
-- **Description**: This significant technical project involved migrating to Apollo Federation architecture, including updating schema compatibility, server configurations, and adding domain layer authorization.
-- **Outcomes**:
-  - Successfully implemented Apollo Federation architecture
-  - Created LinkedChildCheck Policy on vod-ms-domain-auth-loader
-  - Updated schema for compatibility with federation requirements
-  - Created scripts for rover publishing on supergraph
-  - Enhanced system scalability and maintainability
-
-### 7. Storybook Implementation
-- **Duration**: July 11, 2024 - February 13, 2025
-- **Status**: Successfully Completed
-- **Description**: Established a streamlined development process by implementing Storybook as a centralized repository for UI components with clear documentation, reducing complexity and enabling faster iteration cycles.
-- **Outcomes**:
-  - Storybook accepted by the design team as part of the Vodacom Design System
-  - Set up configurations enabling developers to create stories using existing npm packages
-  - Configured Kubernetes and merged changes to master
-  - Created CI/CD pipeline on GitLab for automated testing and deployment
-  - Developed Proof of Concept implementations for Sales, CVM, BBB, and Converge Portal teams
-  - Updated vodacom-storybook repository to latest version
-  - Established a scalable foundation for future product development
-
-## Ticket Analysis
-
-### Overall Statistics
-- **Total Tickets Assigned**: 55
-- **Completed Tickets**: 51
-- **Completion Rate**: 92.7%
-- **Tickets in Progress**: 1
-- **Cancelled/Not Applicable**: 3
-
-### Distribution by Ticket Type
-- Development Subtasks: 39 (70.9%)
-- Maintenance Tasks: 7 (12.7%)
-- Review Subtasks: 4 (7.3%)
-- Story Tickets: 3 (5.5%)
-- Other (Task/Defect): 2 (3.6%)
-
-## Skills Assessment
-
-### 1. Technical Implementation (9/10)
-Khanya has demonstrated excellent technical implementation skills across various projects. The successful delivery of complex initiatives like the NI Migration project and PWA Send Free SMS showcases advanced technical capabilities and deep understanding of systems architecture.
-
-### 2. Problem Solving (9/10)
-The data shows strong problem-solving abilities, particularly in addressing complex technical challenges during migrations and implementations. Khanya effectively identifies issues and develops appropriate solutions while maintaining high quality standards.
-
-### 3. Collaboration (8/10)
-Work on cross-functional projects indicates effective collaboration with team members, stakeholders, and dependent teams. Khanya maintains clear communication and coordinates effectively across organizational boundaries.
-
-### 4. Time Management (8/10)
-The high completion rate and on-time delivery of key projects demonstrates excellent time management skills. Khanya effectively prioritizes tasks and manages competing demands to meet project deadlines.
-
-## Impact and Value Delivery
-
-Beyond squad contributions, the work completed has delivered significant value to the organization:
-
-1. **Enhanced System Performance**: The NI Migration project has improved overall system performance and stability.
-
-2. **Business Capability Enablement**: The VB Top 6 Activation and 1App Recharge with Pin Journey have expanded business capabilities and provided new functionalities.
-
-3. **Reduced Technical Debt**: Development and maintenance work has helped reduce technical debt while implementing new features.
-
-4. **Knowledge Enhancement**: Comprehensive documentation and process improvements have enhanced the team's knowledge base.
-
-5. **Developer Productivity**: The Storybook implementation has created a foundation for faster, more efficient UI development across teams.
-
-## Recommendations for Continued Growth
-
-1. **Technical Leadership Opportunities**: Khanya's strong technical skills position them well for increased technical leadership responsibilities.
-
-2. **Knowledge Sharing**: Consider establishing formal knowledge-sharing sessions to disseminate learnings from completed projects.
-
-3. **Process Optimization**: Leverage insights from completed projects to optimize development and deployment processes.
-
-4. **Advanced Technical Training**: Pursue advanced training in emerging technologies to further enhance technical capabilities.
-
-## Conclusion
-
-Khanya Kupelo has demonstrated exceptional performance across all assigned tasks, with particular excellence in the February 2025 projects. The consistently high completion rate, technical proficiency, and quality of deliverables reflect strong contributions to team and organizational objectives.
-
-The successful completion of all seven key projects highlights Khanya's ability to handle complex technical initiatives with efficiency and excellence. Building on these accomplishments will further enhance Khanya's value to the organization and support continued professional growth.
-
----
-
-*Prepared: February 28, 2025*
-            `;
-            document.getElementById('report-content').innerHTML = marked.parse(reportContent);
-        });
+    <!-- First load navigation component -->
+    <script type="text/babel" src="js/navigation.js"></script>
+    
+    <!-- Then load page-specific content -->
+    <script type="text/babel" src="js/report.js"></script>
+    
+    <!-- Initialize navigation -->
+    <script type="text/babel">
+      ReactDOM.render(<Navigation />, document.getElementById('navigation'));
     </script>
 </body>
 </html>
