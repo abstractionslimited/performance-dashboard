@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouped Tickets</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked@3.0.7/marked.min.js"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <div class="nav-container">
+        <div class="nav-content">
+            <div class="nav-title">Performance Reports</div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Dashboard</a>
+                <a href="report.html" class="nav-link">Performance Report</a>
+                <a href="tickets.html" class="nav-link">Grouped Tickets</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto p-6 bg-white rounded-lg shadow-lg">
+        <div id="tickets-content" class="prose max-w-none"></div>
+    </div>
+    
+    <script src="navigation.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const ticketsContent = `
+# Completed Tickets Grouped by Project
+
+## Squad Impact
+
+The work represented in these tickets demonstrates significant impact across 4 different squads:
+
+1. **1App Squad**: Work on Summer 2024 campaign, Recharge with Pin Journey, Apollo Federation Migration
+2. **Fibre Squad**: Development of 1App Homepage Redesign and mobile upsell for fiber profiles
+3. **Vodacom Business Squad**: Integration with business systems and services
+4. **Services Squad**: NI Migration for the Pay My Bill service and infrastructure improvements
+
+This cross-squad impact highlights versatility and ability to collaborate effectively across different business domains.
+
+## 1. Homepage Redesign
+**Total Tickets**: 5  
+**Status**: All Done  
+**Date Range**: Nov 7, 2024 - Nov 12, 2024
+
+| Ticket | Key | Type | Status | Created | Resolved |
+|--------|-----|------|--------|---------|----------|
+| Process 6 cards | PAPP-6119 | Development Subtask | Done | 2024/11/12 | 2024/11/13 |
+| Process 4 cards | PAPP-6120 | Development Subtask | Done | 2024/11/12 | 2024/11/13 |
+| Display cards without view all balances if cards less than 4 | PAPP-6118 | Development Subtask | Done | 2024/11/12 | 2024/11/12 |
+| If there are four or more cards then show View all balances | PAPP-6117 | Development Subtask | Done | 2024/11/12 | 2024/11/12 |
+| View all balances accordion | PAPP-6094 | Development Subtask | Done | 2024/11/07 | 2024/11/12 |
+
+## 2. VodaPay Home Page Redesign
+**Total Tickets**: 1  
+**Status**: Done  
+**Date Range**: Oct 16, 2024 - Dec 4, 2024
+
+| Ticket | Key | Type | Status | Created | Resolved |
+|--------|-----|------|--------|---------|----------|
+| [1App] Homepage Redesign - Balances Page on MVA Container | PAPP-5968 | Story | Done | 2024/10/16 | 2024/12/04 |
+
+...
+
+## 11. Apollo Federation Migration
+**Total Tickets**: 6  
+**Status**: All Done  
+**Date Range**: May 16, 2024 - Jun 10, 2024
+
+| Ticket | Key | Type | Status | Created | Resolved |
+|--------|-----|------|--------|---------|----------|
+| Create LinkedChildCheck Policy on vod-ms-domain-auth-loader | PAPP-4960 | Review Subtask | Done | 2024/05/16 | 2024/06/10 |
+| Move types to schema file | PAPP-4959 | Development Subtask | Done | 2024/05/16 | 2024/05/16 |
+| Update schema so that it is compatible with Apollo Federation | PAPP-4958 | Development Subtask | Done | 2024/05/16 | 2024/05/16 |
+| Update server to Apollo Federation 2.0 | PAPP-4957 | Development Subtask | Done | 2024/05/16 | 2024/05/16 |
+| Remove deprecated fields from GraphQL schema | PAPP-4956 | Development Subtask | Done | 2024/05/16 | 2024/05/16 |
+| Optimize GraphQL queries for better performance | PAPP-4955 | Development Subtask | Done | 2024/05/16 | 2024/05/16 |
+
+`;
+
+            document.getElementById('tickets-content').innerHTML = marked.parse(ticketsContent);
+        });
+    </script>
+</body>
+</html>
