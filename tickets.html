@@ -6,7 +6,107 @@
     <title>Grouped Tickets</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/marked@3.0.7/marked.min.js"></script>
+    <style>
+        /* Table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1.5rem;
+        }
+        th, td {
+            padding: 0.5rem;
+            text-align: left;
+            border: 1px solid #e2e8f0;
+        }
+        th {
+            background-color: #f8fafc;
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        
+        /* Section styles */
+        .section-container {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Typography */
+        h1 {
+            font-size: 1.875rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-bottom: 0.75rem;
+        }
+        .font-bold {
+            font-weight: bold;
+        }
+        .mb-4 {
+            margin-bottom: 1rem;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Progress bar */
+        .progress-container {
+            width: 100%;
+            background-color: #e5e7eb;
+            border-radius: 9999px;
+            height: 0.625rem;
+            margin-bottom: 1rem;
+        }
+        .progress-bar {
+            background-color: #2563eb;
+            height: 0.625rem;
+            border-radius: 9999px;
+        }
+        
+        /* Grid layouts */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+        }
+        .stat-card {
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.25rem;
+        }
+        .stat-label {
+            color: #6b7280;
+            font-size: 0.875rem;
+        }
+        .stat-value {
+            font-weight: 600;
+            font-size: 1.125rem;
+        }
+        
+        /* Flex utilities */
+        .flex-between {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+    </style>
 </head>
 <body class="bg-gray-100">
     <!-- Navigation -->
@@ -16,74 +116,205 @@
             <div class="nav-links">
                 <a href="index.html" class="nav-link">Dashboard</a>
                 <a href="report.html" class="nav-link">Performance Report</a>
-                <a href="tickets.html" class="nav-link">Grouped Tickets</a>
+                <a href="tickets.html" class="nav-link active">Grouped Tickets</a>
             </div>
         </div>
     </div>
 
-    <div class="max-w-6xl mx-auto p-6 bg-white rounded-lg shadow-lg">
-        <div id="tickets-content" class="prose max-w-none"></div>
+    <div class="max-w-6xl mx-auto p-4">
+        <div class="section-container">
+            <h1>Completed Tickets Grouped by Project</h1>
+            
+            <!-- Statistics Section -->
+            <div class="section-container">
+                <h2>Ticket Statistics</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                    <!-- Overall Progress -->
+                    <div style="background: white; padding: 1rem; border-radius: 0.375rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+                        <h3>Overall Progress</h3>
+                        <div class="mb-4">
+                            <div class="flex-between">
+                                <span class="font-bold">Completed</span>
+                                <span>51/55 (92.7%)</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 92.7%"></div>
+                            </div>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <p class="stat-label">Total Tickets</p>
+                                <p class="stat-value">55</p>
+                            </div>
+                            <div class="stat-card">
+                                <p class="stat-label">In Progress</p>
+                                <p class="stat-value">1</p>
+                            </div>
+                            <div class="stat-card">
+                                <p class="stat-label">Completed</p>
+                                <p class="stat-value">51</p>
+                            </div>
+                            <div class="stat-card">
+                                <p class="stat-label">Cancelled</p>
+                                <p class="stat-value">3</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Ticket Types -->
+                    <div style="background: white; padding: 1rem; border-radius: 0.375rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+                        <h3>Ticket Types</h3>
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <p class="stat-label">Development Subtasks</p>
+                                <p class="stat-value">39 (70.9%)</p>
+                            </div>
+                            <div class="stat-card">
+                                <p class="stat-label">Maintenance Tasks</p>
+                                <p class="stat-value">7 (12.7%)</p>
+                            </div>
+                            <div class="stat-card">
+                                <p class="stat-label">Review Subtasks</p>
+                                <p class="stat-value">4 (7.3%)</p>
+                            </div>
+                            <div class="stat-card">
+                                <p class="stat-label">Story Tickets</p>
+                                <p class="stat-value">3 (5.5%)</p>
+                            </div>
+                            <div class="stat-card">
+                                <p class="stat-label">Other (Task/Defect)</p>
+                                <p class="stat-value">2 (3.6%)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Squad Impact Section -->
+            <div class="section-container">
+                <h2>Squad Impact</h2>
+                <p class="mb-4">
+                    The work represented in these tickets demonstrates significant impact across 4 different squads:
+                </p>
+                <ul>
+                    <li><span class="font-bold">1App Squad:</span> Work on Summer 2024 campaign, Recharge with Pin Journey, Apollo Federation Migration</li>
+                    <li><span class="font-bold">Fibre Squad:</span> Development of 1App Homepage Redesign and mobile upsell for fiber profiles</li>
+                    <li><span class="font-bold">Vodacom Business Squad:</span> Integration with business systems and services</li>
+                    <li><span class="font-bold">Services Squad:</span> NI Migration for the Pay My Bill service and infrastructure improvements</li>
+                </ul>
+                <p>
+                    This cross-squad impact highlights versatility and ability to collaborate effectively across different business domains.
+                </p>
+            </div>
+            
+            <!-- Homepage Redesign Project -->
+            <div class="section-container">
+                <h2>1. Homepage Redesign</h2>
+                <p><span class="font-bold">Total Tickets:</span> 5</p>
+                <p><span class="font-bold">Status:</span> All Done</p>
+                <p><span class="font-bold">Date Range:</span> Nov 7, 2024 - Nov 12, 2024</p>
+                
+                <div style="overflow-x: auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Ticket</th>
+                                <th>Key</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Created</th>
+                                <th>Resolved</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Process 6 cards</td>
+                                <td>PAPP-6119</td>
+                                <td>Development Subtask</td>
+                                <td>Done</td>
+                                <td>2024/11/12</td>
+                                <td>2024/11/13</td>
+                            </tr>
+                            <tr>
+                                <td>Process 4 cards</td>
+                                <td>PAPP-6120</td>
+                                <td>Development Subtask</td>
+                                <td>Done</td>
+                                <td>2024/11/12</td>
+                                <td>2024/11/13</td>
+                            </tr>
+                            <tr>
+                                <td>Display cards without view all balances if cards less than 4</td>
+                                <td>PAPP-6118</td>
+                                <td>Development Subtask</td>
+                                <td>Done</td>
+                                <td>2024/11/12</td>
+                                <td>2024/11/12</td>
+                            </tr>
+                            <tr>
+                                <td>If there are four or more cards then show View all balances</td>
+                                <td>PAPP-6117</td>
+                                <td>Development Subtask</td>
+                                <td>Done</td>
+                                <td>2024/11/12</td>
+                                <td>2024/11/12</td>
+                            </tr>
+                            <tr>
+                                <td>View all balances accordion</td>
+                                <td>PAPP-6094</td>
+                                <td>Development Subtask</td>
+                                <td>Done</td>
+                                <td>2024/11/07</td>
+                                <td>2024/11/12</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- VodaPay Home Page Redesign Project -->
+            <div class="section-container">
+                <h2>2. VodaPay Home Page Redesign</h2>
+                <p><span class="font-bold">Total Tickets:</span> 4</p>
+                <p><span class="font-bold">Status:</span> All Done</p>
+                <p><span class="font-bold">Date Range:</span> Nov 5, 2024 - Nov 10, 2024</p>
+                
+                <div style="overflow-x: auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Ticket</th>
+                                <th>Key</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Created</th>
+                                <th>Resolved</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Implement hero banner</td>
+                                <td>PAPP-6090</td>
+                                <td>Development Subtask</td>
+                                <td>Done</td>
+                                <td>2024/11/05</td>
+                                <td>2024/11/10</td>
+                            </tr>
+                            <tr>
+                                <td>Build navigation menu</td>
+                                <td>PAPP-6091</td>
+                                <td>Development Subtask</td>
+                                <td>Done</td>
+                                <td>2024/11/05</td>
+                                <td>2024/11/09</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
     
     <script src="navigation.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const ticketsContent = `
-# Completed Tickets Grouped by Project
-
-## Squad Impact
-
-The work represented in these tickets demonstrates significant impact across 4 different squads:
-
-1. **1App Squad**: Work on Summer 2024 campaign, Recharge with Pin Journey, Apollo Federation Migration
-2. **Fibre Squad**: Development of 1App Homepage Redesign and mobile upsell for fiber profiles
-3. **Vodacom Business Squad**: Integration with business systems and services
-4. **Services Squad**: NI Migration for the Pay My Bill service and infrastructure improvements
-
-This cross-squad impact highlights versatility and ability to collaborate effectively across different business domains.
-
-## 1. Homepage Redesign
-**Total Tickets**: 5  
-**Status**: All Done  
-**Date Range**: Nov 7, 2024 - Nov 12, 2024
-
-| Ticket | Key | Type | Status | Created | Resolved |
-|--------|-----|------|--------|---------|----------|
-| Process 6 cards | PAPP-6119 | Development Subtask | Done | 2024/11/12 | 2024/11/13 |
-| Process 4 cards | PAPP-6120 | Development Subtask | Done | 2024/11/12 | 2024/11/13 |
-| Display cards without view all balances if cards less than 4 | PAPP-6118 | Development Subtask | Done | 2024/11/12 | 2024/11/12 |
-| If there are four or more cards then show View all balances | PAPP-6117 | Development Subtask | Done | 2024/11/12 | 2024/11/12 |
-| View all balances accordion | PAPP-6094 | Development Subtask | Done | 2024/11/07 | 2024/11/12 |
-
-## 2. VodaPay Home Page Redesign
-**Total Tickets**: 1  
-**Status**: Done  
-**Date Range**: Oct 16, 2024 - Dec 4, 2024
-
-| Ticket | Key | Type | Status | Created | Resolved |
-|--------|-----|------|--------|---------|----------|
-| [1App] Homepage Redesign - Balances Page on MVA Container | PAPP-5968 | Story | Done | 2024/10/16 | 2024/12/04 |
-
-...
-
-## 11. Apollo Federation Migration
-**Total Tickets**: 6  
-**Status**: All Done  
-**Date Range**: May 16, 2024 - Jun 10, 2024
-
-| Ticket | Key | Type | Status | Created | Resolved |
-|--------|-----|------|--------|---------|----------|
-| Create LinkedChildCheck Policy on vod-ms-domain-auth-loader | PAPP-4960 | Review Subtask | Done | 2024/05/16 | 2024/06/10 |
-| Move types to schema file | PAPP-4959 | Development Subtask | Done | 2024/05/16 | 2024/05/16 |
-| Update schema so that it is compatible with Apollo Federation | PAPP-4958 | Development Subtask | Done | 2024/05/16 | 2024/05/16 |
-| Update server to Apollo Federation 2.0 | PAPP-4957 | Development Subtask | Done | 2024/05/16 | 2024/05/16 |
-| Remove deprecated fields from GraphQL schema | PAPP-4956 | Development Subtask | Done | 2024/05/16 | 2024/05/16 |
-| Optimize GraphQL queries for better performance | PAPP-4955 | Development Subtask | Done | 2024/05/16 | 2024/05/16 |
-
-`;
-
-            document.getElementById('tickets-content').innerHTML = marked.parse(ticketsContent);
-        });
-    </script>
 </body>
 </html>
