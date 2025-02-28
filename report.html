@@ -3,111 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Performance Report</title>
+    <title>Grouped Tickets</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <!-- Add GitHub Markdown CSS for proper Markdown styling -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/marked@3.0.7/marked.min.js"></script>
+    <!-- Add this stylesheet for better markdown rendering -->
     <style>
-        /* Additional styling for Markdown content */
-        .markdown-body {
-            box-sizing: border-box;
-            min-width: 200px;
-            max-width: 980px;
-            margin: 0 auto;
-            padding: 45px;
-        }
-
-        .markdown-body h1 {
-            font-size: 2em;
-            margin-bottom: 0.5em;
-            padding-bottom: 0.3em;
-            border-bottom: 1px solid #eaecef;
-        }
-
-        .markdown-body h2 {
-            font-size: 1.5em;
-            margin-top: 1.5em;
-            margin-bottom: 0.5em;
-            padding-bottom: 0.3em;
-            border-bottom: 1px solid #eaecef;
-        }
-
-        .markdown-body h3 {
-            font-size: 1.25em;
-            margin-top: 1.5em;
-            margin-bottom: 0.5em;
-        }
-
-        .markdown-body ul, .markdown-body ol {
-            padding-left: 2em;
-            margin-bottom: 1em;
-        }
-
-        .markdown-body li {
-            margin-bottom: 0.25em;
-        }
-
-        .markdown-body p {
-            margin-bottom: 1em;
-            line-height: 1.6;
-        }
-
-        .markdown-body blockquote {
-            padding: 0 1em;
-            color: #6a737d;
-            border-left: 0.25em solid #dfe2e5;
-            margin-bottom: 1em;
-        }
-
-        .markdown-body code {
-            padding: 0.2em 0.4em;
-            margin: 0;
-            font-size: 85%;
-            background-color: rgba(27,31,35,0.05);
-            border-radius: 3px;
-        }
-
-        .markdown-body pre {
-            padding: 16px;
-            overflow: auto;
-            font-size: 85%;
-            line-height: 1.45;
-            background-color: #f6f8fa;
-            border-radius: 3px;
-            margin-bottom: 1em;
-        }
-
-        .markdown-body table {
-            display: block;
-            width: 100%;
-            overflow: auto;
-            margin-bottom: 1em;
-            border-spacing: 0;
+        /* Ensure tables display properly */
+        table {
             border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1rem;
         }
-
-        .markdown-body table th, .markdown-body table td {
-            padding: 6px 13px;
-            border: 1px solid #dfe2e5;
+        th, td {
+            border: 1px solid #e2e8f0;
+            padding: 0.5rem;
+            text-align: left;
         }
-
-        .markdown-body table tr {
-            background-color: #fff;
-            border-top: 1px solid #c6cbd1;
+        th {
+            background-color: #f8fafc;
+            font-weight: 600;
         }
-
-        .markdown-body table tr:nth-child(2n) {
-            background-color: #f6f8fa;
+        tr:nth-child(even) {
+            background-color: #f8fafc;
         }
-
-        .markdown-body hr {
-            height: 0.25em;
-            padding: 0;
-            margin: 24px 0;
-            background-color: #e1e4e8;
-            border: 0;
+        
+        /* Ensure other markdown elements display well */
+        h1 { font-size: 2rem; font-weight: 700; margin-top: 1.5rem; margin-bottom: 1rem; }
+        h2 { font-size: 1.5rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.75rem; }
+        h3 { font-size: 1.25rem; font-weight: 600; margin-top: 1.25rem; margin-bottom: 0.5rem; }
+        ul, ol { padding-left: 1.5rem; margin-bottom: 1rem; }
+        li { margin-bottom: 0.25rem; }
+        p { margin-bottom: 1rem; }
+        strong { font-weight: 600; }
+        
+        /* Make the prose container display well */
+        .prose {
+            max-width: none;
+            color: #374151;
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -238,20 +172,6 @@ This cross-squad impact showcases Khanya's ability to quickly adapt to different
 - Story Tickets: 3 (5.5%)
 - Other (Task/Defect): 2 (3.6%)
 
-## Skills Assessment
-
-### 1. Technical Implementation (9/10)
-Khanya has demonstrated excellent technical implementation skills across various projects. The successful delivery of complex initiatives like the NI Migration project and PWA Send Free SMS showcases advanced technical capabilities and deep understanding of systems architecture.
-
-### 2. Problem Solving (9/10)
-The data shows strong problem-solving abilities, particularly in addressing complex technical challenges during migrations and implementations. Khanya effectively identifies issues and develops appropriate solutions while maintaining high quality standards.
-
-### 3. Collaboration (8/10)
-Work on cross-functional projects indicates effective collaboration with team members, stakeholders, and dependent teams. Khanya maintains clear communication and coordinates effectively across organizational boundaries.
-
-### 4. Time Management (8/10)
-The high completion rate and on-time delivery of key projects demonstrates excellent time management skills. Khanya effectively prioritizes tasks and manages competing demands to meet project deadlines.
-
 ## Impact and Value Delivery
 
 Beyond squad contributions, the work completed has delivered significant value to the organization:
@@ -265,23 +185,6 @@ Beyond squad contributions, the work completed has delivered significant value t
 4. **Knowledge Enhancement**: Comprehensive documentation and process improvements have enhanced the team's knowledge base.
 
 5. **Developer Productivity**: The Storybook implementation has created a foundation for faster, more efficient UI development across teams.
-
-## Recommendations for Continued Growth
-
-1. **Technical Leadership Opportunities**: Khanya's strong technical skills position them well for increased technical leadership responsibilities.
-
-2. **Knowledge Sharing**: Consider establishing formal knowledge-sharing sessions to disseminate learnings from completed projects.
-
-3. **Process Optimization**: Leverage insights from completed projects to optimize development and deployment processes.
-
-4. **Advanced Technical Training**: Pursue advanced training in emerging technologies to further enhance technical capabilities.
-
-## Conclusion
-
-Khanya Kupelo has demonstrated exceptional performance across all assigned tasks, with particular excellence in the February 2025 projects. The consistently high completion rate, technical proficiency, and quality of deliverables reflect strong contributions to team and organizational objectives.
-
-The successful completion of all seven key projects highlights Khanya's ability to handle complex technical initiatives with efficiency and excellence. Building on these accomplishments will further enhance Khanya's value to the organization and support continued professional growth.
-
 ---
 
 *Prepared: February 28, 2025*
