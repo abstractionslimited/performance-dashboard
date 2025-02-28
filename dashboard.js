@@ -1,5 +1,4 @@
-const { BarChart, Bar, PieChart, Pie, Cell, ResponsiveContainer, XAxis, YAxis, CartesianGrid, Tooltip, Legend } = Recharts;
-
+const { BarChart, Bar, PieChart, Pie, Cell, ResponsiveContainer, XAxis, YAxis, CartesianGrid, Tooltip, Legend } = window.Recharts;
 const PerformanceDashboard = () => {
   // Status data
   const statusData = [
