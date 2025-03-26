@@ -1,0 +1,390 @@
+Summary,Issue key,Issue Type,Status,Project name,Project lead id,Resolution,Created,Updated,Resolved,Log Work
+Online Orders with Incorrect Address Shipping Postal Code,FTTHS-8969,Maintenance Task,Doing,FTTH SQUAD,61d8399bbce5e000695c81cd,,2025/03/17 10:10,2025/03/24 11:02,,
+Analytics,VMS-1219,Analytics Subtask,Not Applicable,VB Mobile Squad,712020:e1d428a2-6b3b-4e25-bc24-c81f57aa2422,,2025/03/04 09:54,2025/03/18 09:52,,;18/Mar/25 9:52 AM;712020:e1d428a2-6b3b-4e25-bc24-c81f57aa2422;0
+Low Level Design,VMS-1216,Design Subtask,Not Applicable,VB Mobile Squad,712020:e1d428a2-6b3b-4e25-bc24-c81f57aa2422,,2025/03/04 09:54,2025/03/18 09:49,,;18/Mar/25 9:48 AM;712020:e1d428a2-6b3b-4e25-bc24-c81f57aa2422;0
+Static Code Analysis,VMS-1215,Development Subtask,Not Applicable,VB Mobile Squad,712020:e1d428a2-6b3b-4e25-bc24-c81f57aa2422,,2025/03/04 09:54,2025/03/18 09:51,,;18/Mar/25 9:51 AM;712020:e1d428a2-6b3b-4e25-bc24-c81f57aa2422;0
+Analytics,VMS-1204,Analytics Subtask,Done,VB Mobile Squad,712020:e1d428a2-6b3b-4e25-bc24-c81f57aa2422,NOT APPLICABLE,2025/02/19 16:25,2025/03/18 09:41,2025/03/18 09:41,;18/Mar/25 9:39 AM;712020:e1d428a2-6b3b-4e25-bc24-c81f57aa2422;0
+Low Level Design,VMS-1202,Design Subtask,Done,VB Mobile Squad,712020:e1d428a2-6b3b-4e25-bc24-c81f57aa2422,,2025/02/19 16:25,2025/03/18 09:37,,;18/Mar/25 9:27 AM;712020:e1d428a2-6b3b-4e25-bc24-c81f57aa2422;0
+Static Code Analysis,VMS-1199,Development Subtask,Not Applicable,VB Mobile Squad,712020:e1d428a2-6b3b-4e25-bc24-c81f57aa2422,,2025/02/19 16:25,2025/03/18 09:37,,;18/Mar/25 9:37 AM;712020:e1d428a2-6b3b-4e25-bc24-c81f57aa2422;0
+Development Subtask,VMS-1197,Development Subtask,Done,VB Mobile Squad,712020:e1d428a2-6b3b-4e25-bc24-c81f57aa2422,Done,2025/02/19 16:25,2025/03/18 09:38,2025/03/18 09:38,;14/Mar/25 3:14 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;144000
+VBT6 - Activate Business Journey page,VMS-1196,Story,Done,VB Mobile Squad,712020:e1d428a2-6b3b-4e25-bc24-c81f57aa2422,Done,2025/02/19 11:41,2025/03/25 13:12,2025/03/18 11:43,;18/Mar/25 9:43 AM;712020:e1d428a2-6b3b-4e25-bc24-c81f57aa2422;1036800
+Create profile service for initiate payment service,CUS-7563,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,Done,2025/01/21 14:21,2025/03/11 09:47,2025/03/11 09:47,;21/Jan/25 2:22 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;1800
+Create payment endpoint,CUS-7555,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,Done,2025/01/14 21:06,2025/01/21 14:20,2025/01/21 14:20,;14/Jan/25 9:07 PM;ug:0d815b4c-e9d8-49dc-9cf9-e0bbef56a40a;0
+Static Code Analysis,PAPP-6336,Development Subtask,Not Applicable,Project 1App,61d439af567cb70070cfc100,,2025/01/14 11:32,2025/01/17 13:04,,
+Development Subtask,PAPP-6136,Development Subtask,Not Applicable,Project 1App,61d439af567cb70070cfc100,,2024/11/18 10:57,2025/01/17 13:04,,
+UI Audits,PAPP-6123,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/11/13 14:46,2024/11/28 09:27,2024/11/28 09:27,;28/Nov/24 9:27 AM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;28800
+Process 4 cards.,PAPP-6120,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/11/12 15:39,2024/11/13 14:38,2024/11/13 14:38,;13/Nov/24 2:38 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;28800
+Process 6 cards,PAPP-6119,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/11/12 15:38,2024/11/13 14:45,2024/11/13 14:45,;13/Nov/24 2:45 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;7200
+Display cards without view all balances. if cards less than 4,PAPP-6118,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/11/12 15:37,2024/11/13 14:13,2024/11/12 15:40,;12/Nov/24 3:40 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;3600
+If there are four or more cards then show View all balances,PAPP-6117,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/11/12 15:37,2024/11/13 14:13,2024/11/12 15:39,;12/Nov/24 3:39 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;3600
+View all balances accordian,PAPP-6094,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/11/07 12:07,2024/11/13 14:13,2024/11/12 15:35,;07/Nov/24 12:10 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;3600
+Development Subtask,PAPP-5969,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/10/16 14:48,2024/12/04 16:19,2024/12/04 16:19,;04/Dec/24 4:18 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;60
+[1App] Homepage Redesign - Balances Page on MVA Container,PAPP-5968,Story,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/10/16 14:46,2024/12/05 12:26,2024/12/04 16:49,;04/Dec/24 4:49 PM;ug:0cb391b5-2c3d-4c11-9cb1-f751a682c2d8;201600
+onboarding tagging fixes,PAPP-5947,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/10/11 12:13,2024/10/16 13:50,2024/10/16 13:50,;11/Oct/24 12:26 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;1500
+T&C's not loading from the V-Up screen,FSV2-13214,Investigation,Done,VodaPay,712020:b6b8932a-0450-4a33-8749-1d95198e2b58,Done,2024/10/02 09:23,2024/10/04 10:57,2024/10/04 10:57,
+Summer V-UP Optin Banner,PAPP-5812,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/09/04 10:06,2024/10/07 16:24,2024/10/07 16:24,;07/Oct/24 4:24 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;28800
+Onboarding and Optin,PAPP-5791,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/08/28 14:32,2024/09/09 10:14,2024/09/09 10:14,;29/Aug/24 10:06 AM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;1500
+New shop category icon is not display on VMA,PAPP-5774,Defect,Cancelled,Project 1App,61d439af567cb70070cfc100,Cancelled,2024/08/27 11:32,2024/09/04 16:30,2024/08/27 15:32,
+create recharge with Pin pull request,PAPP-5720,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/08/13 13:42,2024/08/28 09:13,2024/08/20 15:38,;20/Aug/24 3:37 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;28800
+Recharge-with-pin-MR,PAPP-5719,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/08/13 13:22,2024/08/28 09:13,2024/08/20 15:40,;20/Aug/24 3:40 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;1500
+Update vod-ms-app-prepay-balance CI,PAPP-5675,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/08/07 13:01,2024/08/28 09:13,2024/08/20 15:39,;20/Aug/24 3:39 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;57600
+Landing page,PAPP-5489,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/07/16 14:58,2024/08/28 09:13,2024/07/22 23:44,;17/Jul/24 8:11 AM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;1500
+Static Code Analysis,PAPP-5483,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/07/16 13:19,2024/09/04 15:08,2024/09/04 15:08,;04/Sep/24 3:08 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;7200
+Alerts and Queries,PAPP-5340,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/07/01 16:35,2024/08/23 09:27,2024/07/03 09:51,;01/Jul/24 5:06 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;3600
+Update vod-npm-domain-profile package,PAPP-5328,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/06/27 15:07,2024/08/23 09:27,2024/07/01 16:33,;01/Jul/24 4:33 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;7200
+Update co-processor policy to call did auth endpoint,PAPP-5145,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/06/10 09:10,2024/08/23 09:27,2024/07/01 16:35,;01/Jul/24 4:35 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;10800
+End to End Testing,PAPP-5144,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/06/10 09:09,2024/08/23 09:27,2024/07/01 16:34,;01/Jul/24 4:34 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;1800
+DiD auth service ,PAPP-5143,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/06/10 09:09,2024/08/23 09:27,2024/06/27 15:06,;27/Jun/24 3:06 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;144000
+Entry point,PAPP-5121,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/06/06 14:21,2024/08/28 09:13,2024/07/16 14:58,;16/Jul/24 12:50 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;1500
+[1App] Recharge with Pin Journey,PAPP-5108,Story,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/06/04 13:50,2024/09/09 12:26,2024/09/05 09:11,;15/Jul/24 3:44 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;1500
+[1App] Shop Category Icon,PAPP-5044,Maintenance Task,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/05/27 15:15,2024/09/03 15:16,2024/09/03 11:58,;03/Sep/24 11:58 AM;ug:20932542-b237-4eb6-8bf1-bdc76bf4ff7a;28800
+[PWA] Send Free SMS - Fix zoom in issue on Send Free SMS Journey ,PAPP-5007,Maintenance Task,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/05/23 12:05,2024/05/30 13:03,2024/05/30 12:05,;23/May/24 4:17 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;1500
+[MVA] Update Address Autocomplete Endpoint,PAPP-4998,Maintenance Task,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/05/22 13:20,2024/06/06 13:20,2024/06/05 16:29,;24/May/24 11:02 AM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;1500
+[VMA] Update Address Autocomplete Endpoint,PAPP-4997,Maintenance Task,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/05/22 13:19,2024/06/06 13:12,2024/06/05 13:58,;23/May/24 3:28 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;14400
+Update format Msisdn directive on subgraph,PAPP-4961,Review Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/05/16 20:18,2024/08/23 09:27,2024/05/21 14:22,;21/May/24 2:22 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;57600
+Create LinkedChildCheck Policy on vod-ms-domain-auth-loader,PAPP-4960,Review Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/05/16 20:17,2024/08/23 09:27,2024/06/10 09:08,;06/Jun/24 8:50 AM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;1500
+move types to schema file,PAPP-4959,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/05/16 20:09,2024/08/23 09:27,2024/05/16 20:14,;16/May/24 8:14 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;3600
+update schema so that it is compatible with apollo federation,PAPP-4958,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/05/16 20:09,2024/08/23 09:27,2024/05/16 20:14,;16/May/24 8:13 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;3600
+Update server to apollo federation,PAPP-4957,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/05/16 20:09,2024/08/23 09:27,2024/05/16 20:13,;16/May/24 8:12 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;3600
+Create script for rover publishing on supergraph,PAPP-4956,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/05/16 20:08,2024/08/23 09:27,2024/05/16 20:11,;16/May/24 8:11 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;28800
+Update apollo dependencies,PAPP-4955,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/05/16 20:08,2024/08/23 09:27,2024/05/16 20:10,;16/May/24 8:10 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;28800
+Fix Defects picked up from QA,PAPP-4781,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/04/29 10:27,2024/05/03 15:29,2024/05/03 15:29,;03/May/24 3:29 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;28800
+Tagging,PAPP-4722,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/04/22 10:36,2024/04/26 09:00,2024/04/26 09:00,;26/Apr/24 9:00 AM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;57600
+[VMA] Shop Category Icon ,PAPP-4714,Maintenance Task,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/04/22 08:00,2024/09/04 15:07,2024/09/03 11:59,;03/Sep/24 11:59 AM;ug:20932542-b237-4eb6-8bf1-bdc76bf4ff7a;28800
+Check Recipient's eligibility to Recieve SMS,PAPP-4697,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/04/19 08:01,2024/04/26 08:59,2024/04/26 08:59,;19/Apr/24 8:02 AM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;28800
+Manage contacts screen,PAPP-4696,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/04/19 07:58,2024/04/19 08:00,2024/04/19 08:00,;19/Apr/24 7:58 AM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;979200
+Get Free SMS banner,PAPP-4695,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/04/19 07:56,2024/04/19 07:57,2024/04/19 07:57,;19/Apr/24 7:57 AM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;57600
+Invalid Number Error Screen,PAPP-4639,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/04/11 10:04,2024/04/26 09:01,2024/04/26 09:01,;26/Apr/24 9:01 AM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;28800
+Send Free SMS Screen,PAPP-4636,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/04/10 14:13,2024/04/19 07:55,2024/04/19 07:55,;19/Apr/24 7:54 AM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;144000
+Incorrect pricing shown in powerflex journey,DPS-16151,Incident,Done,Discover Squad,70121:76a351b4-b2f2-4ae1-8880-4cd60cc817e0,Done,2024/04/04 12:57,2024/04/05 11:09,2024/04/05 11:09,;05/Apr/24 11:08 AM;ug:1c62e2e6-bddd-4b6b-8b72-8f070908f007;57600
+vod-ms-gql-msisdn-manage Lift and Shift,PAPP-4605,Task,Doing,Project 1App,61d439af567cb70070cfc100,,2024/04/04 09:14,2024/08/23 09:27,,;03/Jul/24 9:50 AM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;18000
+[MVA] Add Shop Category Icons ,PAPP-4550,Maintenance Task,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/03/26 14:03,2024/04/03 09:37,2024/04/03 09:28,;03/Apr/24 9:28 AM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;28800
+Code review,PAPP-4037,Review Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/02/06 11:26,2024/03/22 08:39,2024/03/07 15:56,;07/Mar/24 3:56 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;86400
+My Products Screen UI Enhancement,PAPP-4036,Review Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/02/06 11:25,2024/03/22 08:39,2024/02/16 04:20,;16/Feb/24 4:20 AM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;28800
+Create Add number Button,PAPP-4035,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/02/06 11:12,2024/03/22 08:39,2024/02/15 09:26,;15/Feb/24 9:26 AM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;3600
+Create NO GSM deals card,PAPP-4034,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2024/02/06 11:11,2024/03/22 08:39,2024/02/15 09:05,;06/Feb/24 11:25 AM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;28800
+Static Code Analysis,PAPP-3808,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2023/12/07 10:47,2024/05/03 15:29,2024/05/03 15:29,;03/May/24 3:29 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;28800
+Pull request to QA,PAPP-3805,Development Subtask,Done,Project 1App,61d439af567cb70070cfc100,Done,2023/12/07 10:47,2024/04/29 10:26,2024/04/29 10:26,;26/Apr/24 9:02 AM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;3600
+BSS-FMW-service,CUS-4772,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,Done,2023/11/30 12:54,2025/01/21 14:24,2025/01/21 14:24,time-tracking;30/Nov/23 4:58 PM;addon_is.origo.jira.tempo-plugin;18000
+BSS-FWM-Client,CUS-4769,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,Done,2023/11/29 12:18,2023/11/30 16:57,2023/11/30 16:57,time-tracking;30/Nov/23 4:56 PM;addon_is.origo.jira.tempo-plugin;50400
+Amend audits on  payment form ,CUS-4762,Development Subtask,To Do,DE Customer,61c9fde1f3037f006999e4d8,,2023/11/29 09:06,2023/11/29 09:06,,
+Change Payment data to Payment Date,CUS-4746,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,Fixed,2023/11/24 08:59,2023/11/24 10:28,2023/11/24 10:28,Removes spelling;24/Nov/23 10:28 AM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;28800
+"When choosing ""Read T&C's) we are directed to the page that has FAQ's",CUS-4744,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,Done,2023/11/24 08:53,2023/11/28 06:58,2023/11/28 06:58,;28/Nov/23 6:53 AM;ug:14c9f818-6f93-408b-92ef-3469668d10b4;60
+PowerFlex Web UI Updates - Drop 1,CUS-4741,Maintenance Task,Done,DE Customer,61c9fde1f3037f006999e4d8,Done,2023/11/24 08:52,2023/11/28 09:20,2023/11/28 06:59,
+[PWA] Send Free SMS,PAPP-3652,Story,Done,Project 1App,61d439af567cb70070cfc100,Done,2023/11/21 15:01,2024/05/07 07:25,2024/05/03 16:21,;03/May/24 4:21 PM;ug:20932542-b237-4eb6-8bf1-bdc76bf4ff7a;28800
+Cart summary Tab,CUS-4597,Sub-task,Done,DE Customer,61c9fde1f3037f006999e4d8,Done,2023/11/10 08:58,2023/11/14 10:43,2023/11/14 10:43,;14/Nov/23 10:43 AM;ug:14c9f818-6f93-408b-92ef-3469668d10b4;60
+Implement redirect on cancel click,CUS-4593,Sub-task,Done,DE Customer,61c9fde1f3037f006999e4d8,Done,2023/11/08 15:55,2023/11/10 10:46,2023/11/10 10:46,;10/Nov/23 10:45 AM;ug:14c9f818-6f93-408b-92ef-3469668d10b4;60
+Deal Select,CUS-4503,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,Done,2023/10/27 11:18,2023/11/10 10:46,2023/11/10 10:46,;09/Nov/23 3:32 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;144000
+[FE] 1App - Widget Mobile Upsell (Fibre only profile),PAPP-2804,Maintenance Task,Done,Project 1App,61d439af567cb70070cfc100,Done,2023/08/31 14:17,2024/03/25 15:38,2024/03/20 11:21,;15/Feb/24 9:08 AM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;18000
+Landing page for prepaid user new Visit,CUS-3752,Sub-task,Done,DE Customer,61c9fde1f3037f006999e4d8,Done,2023/07/15 13:12,2023/07/20 23:28,2023/07/20 23:28,;20/Jul/23 11:27 PM;ug:14c9f818-6f93-408b-92ef-3469668d10b4;60
+Development,CUS-3706,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,Done,2023/07/07 09:21,2023/07/07 10:28,2023/07/07 10:28,;07/Jul/23 10:27 AM;ug:14c9f818-6f93-408b-92ef-3469668d10b4;7200
+Development,CUS-3688,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,Done,2023/07/06 12:12,2023/07/06 12:45,2023/07/06 12:45,;06/Jul/23 12:44 PM;ug:14dd5fb3-4dd8-4cf0-8693-d29538c127e5;3600
+VAT Credit note screen,CUS-3653,Sub-task,Done,DE Customer,61c9fde1f3037f006999e4d8,Done,2023/06/26 07:54,2023/07/04 08:38,2023/07/04 08:38,;04/Jul/23 8:38 AM;ug:14c9f818-6f93-408b-92ef-3469668d10b4;3600
+Replace domain-bills endpoints with stable ms-bills endpoints,CUS-3648,Sub-task,Done,DE Customer,61c9fde1f3037f006999e4d8,Done,2023/06/22 08:19,2023/07/02 19:52,2023/07/02 19:52,;02/Jul/23 7:51 PM;ug:14dd5fb3-4dd8-4cf0-8693-d29538c127e5;14400
+Analytics Subtask,CUS-3610,Analytics Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,Cancelled,2023/06/15 15:42,2023/07/04 08:00,2023/07/04 07:59,;04/Jul/23 7:58 AM;ug:14dd5fb3-4dd8-4cf0-8693-d29538c127e5;60
+remove voucher validatation,CUS-3445,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,Done,2023/05/22 10:35,2024/06/18 12:55,2024/06/18 12:55,;18/Jun/24 12:55 PM;ug:0b71175d-e738-49cd-80ff-9819d43e62ae;57600
+Creating Secrets for getDeviceSimDetails Endpoint,CUS-3240,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,,2023/04/03 09:37,2023/04/20 10:29,,
+Prometheus Alerts for getDeviceSimDetails Endpoint,CUS-3239,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,,2023/04/03 09:37,2023/04/20 10:17,,time-tracking;17/Apr/23 3:31 PM;addon_is.origo.jira.tempo-plugin;7200
+Zuul-routes for getDeviceSimDetails Endpoint,CUS-3238,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,,2023/04/03 09:37,2023/04/20 10:28,,
+Business and Audit Events for getDeviceSimDetails Endpoint,CUS-3237,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,,2023/04/03 09:36,2023/04/15 21:21,,time-tracking;13/Apr/23 9:47 AM;addon_is.origo.jira.tempo-plugin;7200
+Prometheus Alerts - Request OTP Endpoint,CUS-3226,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,,2023/04/03 08:57,2023/04/26 11:38,,time-tracking;26/Apr/23 11:38 AM;addon_is.origo.jira.tempo-plugin;3600
+Create service for get Device And Sim Details,CUS-3088,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,,2023/03/14 12:23,2023/04/12 12:15,,time-tracking;11/Apr/23 9:15 AM;addon_is.origo.jira.tempo-plugin;28800
+Improve unit tests and test coverage,CUS-2998,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,,2023/03/06 09:48,2023/03/13 21:17,,
+ updating the vod-ms-core-auditing dependency DDU,CUS-2932,Sub-task,Done,DE Customer,61c9fde1f3037f006999e4d8,,2023/02/23 15:48,2023/05/15 11:32,,
+Low Level Design,CUS-2830,Design Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,Done,2023/02/14 10:13,2023/07/24 07:12,2023/07/24 07:12,;24/Jul/23 7:12 AM;ug:14c9f818-6f93-408b-92ef-3469668d10b4;28800
+Fix Emailing Service,CUS-2762,Sub-task,Done,DE Customer,61c9fde1f3037f006999e4d8,,2023/02/02 08:46,2023/03/02 10:20,,
+Modify messaging service for large file,CUS-2673,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,,2023/01/24 15:29,2023/02/01 13:19,,
+login as admin and view admin page after successful login,CVML-5390,Story,Done,CVM Loyalty,61c9fe0a7c6f980070df9cab,Done,2022/08/25 15:04,2022/09/29 15:07,2022/09/29 15:07,
+'As a user I would like to enter msisdn and choose a campaign to retrieve information for,CVML-5365,Story,Done,CVM Loyalty,61c9fe0a7c6f980070df9cab,Done,2022/08/23 10:28,2022/08/30 10:29,2022/08/30 10:29,
+Process Audit,CUS-1941,Governance Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,,2022/08/16 14:52,2022/08/17 10:41,,time-tracking;17/Aug/22 10:41 AM;addon_is.origo.jira.tempo-plugin;3600
+Business Analysis,CUS-1938,Analysis Subtask,Not Applicable,DE Customer,61c9fde1f3037f006999e4d8,,2022/08/16 14:52,2022/08/17 10:09,,
+Analytics,CUS-1935,Analytics Subtask,Not Applicable,DE Customer,61c9fde1f3037f006999e4d8,,2022/08/16 14:52,2022/08/17 10:08,,
+Low Level Design,CUS-1933,Design Subtask,Not Applicable,DE Customer,61c9fde1f3037f006999e4d8,,2022/08/16 14:52,2022/08/17 10:07,,
+Development Subtask,CUS-1930,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,,2022/08/16 14:52,2022/08/16 14:55,,
+Process Audit,CUS-1923,Governance Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,,2022/08/16 13:04,2022/08/16 15:10,,time-tracking;16/Aug/22 3:09 PM;addon_is.origo.jira.tempo-plugin;7200
+Functional Test Execution,CUS-1919,Testing Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,Done,2022/08/16 13:04,2022/08/17 10:42,2022/08/17 10:42,time-tracking;17/Aug/22 10:42 AM;addon_is.origo.jira.tempo-plugin;3600
+Analytics,CUS-1918,Analytics Subtask,Not Applicable,DE Customer,61c9fde1f3037f006999e4d8,,2022/08/16 13:04,2022/08/16 15:02,,
+Development Subtask,CUS-1912,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,,2022/08/16 13:04,2022/08/16 15:00,,
+Summer Web frontend-Main Page + validation,CVML-5301,Story,Done,CVM Loyalty,61c9fe0a7c6f980070df9cab,Done,2022/08/03 13:53,2022/08/25 08:41,2022/08/25 08:41,
+Summer Web frontend-Main Page ,CVML-5300,Story,Done,CVM Loyalty,61c9fe0a7c6f980070df9cab,Done,2022/08/03 13:49,2022/08/25 08:41,2022/08/25 08:41,
+create zuul routes for vod-ms-rewards-voucher,CUS-1496,Sub-task,Done,DE Customer,61c9fde1f3037f006999e4d8,Done,2022/05/09 14:45,2022/07/13 11:30,2022/05/12 08:26,;12/May/22 8:26 AM;ug:0b71175d-e738-49cd-80ff-9819d43e62ae;7200
+Development Subtask,CUS-1511,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,,2022/04/22 08:25,2022/08/16 14:47,,
+Process Audit,CUS-1605,Governance Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,,2022/04/22 08:25,2022/08/16 14:49,,time-tracking;16/Aug/22 2:48 PM;addon_is.origo.jira.tempo-plugin;10800
+Static Code Analysis,CUS-1510,Development Subtask,Not Applicable,DE Customer,61c9fde1f3037f006999e4d8,,2022/04/21 10:11,2022/08/16 14:55,,
+Process Audit,CUS-1606,Governance Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,,2022/04/20 10:56,2022/08/16 14:59,,time-tracking;16/Aug/22 2:59 PM;addon_is.origo.jira.tempo-plugin;18000
+As Channel user I want to see all my allocated Voucher Details,CUS-1494,Story,Shipped,DE Customer,61c9fde1f3037f006999e4d8,Done,2022/04/08 15:22,2022/08/31 08:30,2022/08/17 12:07,;17/Aug/22 12:07 PM;ug:1d8f689e-2a7e-4b57-be97-fb47cd4808c6;288000
+As a domain customer I want to get all my subscriber allocated voucher history,CUS-1487,Story,Shipped,DE Customer,61c9fde1f3037f006999e4d8,Done,2022/04/08 15:20,2022/08/18 15:25,2022/08/16 16:28,;16/Aug/22 4:28 PM;ug:5685c563-cb7f-4374-afd6-95efa248c670;288000
+Development,CUS-1321,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,None,2022/04/04 13:36,2022/04/13 09:33,2022/05/24 04:13,
+Download cotroller,CUS-1314,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,,2022/04/04 13:35,2022/04/08 09:31,,
+Download service,CUS-1313,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,None,2022/04/04 13:29,2022/04/08 09:31,2022/05/24 04:13,
+Email Invoice for C3D Service,CUS-1247,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,,2022/03/09 14:33,2022/07/06 16:47,,
+Email Invoice for C3D Client,CUS-1246,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,,2022/03/09 14:33,2022/03/28 09:01,,
+4. Download Invoice PDF Controller for Mobile,CUS-1208,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,None,2022/02/07 12:04,2022/03/22 09:00,2022/05/24 04:13,"Analyzed, implemented using TDD;09/Mar/22 9:07 AM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;27660"
+Email messaging service,CUS-1188,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,,2022/02/04 06:56,2023/01/30 12:05,,
+Msisdn service logic,CUS-1055,Development Subtask,Not Applicable,DE Customer,61c9fde1f3037f006999e4d8,,2021/12/01 10:46,2022/02/07 12:28,,
+Msisdn service logic - duplicate,CUS-977,Development Subtask,Not Applicable,DE Customer,61c9fde1f3037f006999e4d8,None,2021/11/17 06:26,2021/12/01 10:46,2022/05/24 04:12,
+6. Create getStatementMonths service,CUS-967,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,None,2021/11/17 06:15,2022/04/13 09:32,2022/05/24 04:12,
+7. Create getStatementMonths endpoint handler,CUS-966,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,None,2021/11/17 06:15,2022/04/13 09:32,2022/05/24 04:12,
+Create getStatementDates service,CUS-965,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,None,2021/11/17 06:14,2022/01/12 10:32,2022/05/24 04:14,Working on issue CUS-965;12/Jan/22 10:31 AM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;28800
+Create getStatementDates endpoint handler,CUS-964,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,None,2021/11/17 06:14,2022/01/12 10:29,2022/05/24 04:13,Sent Pull request;26/Nov/21 9:34 AM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;14400
+Create getStatementSummary service,CUS-963,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,None,2021/11/17 06:14,2022/05/24 04:14,2022/05/24 04:13,Wrote failing unit test for statements Summary Service;17/Jan/22 9:30 AM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;5400
+Create getStatementSummary endpoint handler,CUS-962,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,None,2021/11/17 06:13,2022/01/14 15:05,2022/05/24 04:13,Working on issue CUS-962;12/Jan/22 10:43 AM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;4620
+Create getStatementReport service,CUS-961,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,None,2021/11/17 06:13,2022/05/24 04:14,2022/05/24 04:13,Modelled solution for statement Report;01/Feb/22 9:05 AM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;3600
+2. Create getStatementReport endpoint handler,CUS-960,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,None,2021/11/17 06:13,2022/05/24 04:14,2022/05/24 04:13,Added controller and Wrote unit tests;25/Feb/22 1:27 PM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;17760
+14. Redis Cache Client,CUS-888,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,None,2021/11/05 10:17,2022/03/22 09:23,2022/05/24 04:12,Configured Redis cache ;10/Mar/22 9:59 AM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;19800
+12. Business Events,CUS-886,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,None,2021/11/05 10:17,2022/03/25 15:00,2022/05/24 04:13,
+1. Download Statement PDF,CUS-852,Development Subtask,Not Applicable,DE Customer,61c9fde1f3037f006999e4d8,None,2021/11/04 06:29,2022/05/24 04:14,2022/05/24 04:13,Handler downloads statement report;01/Mar/22 9:36 AM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;5100
+Automated/Manual Regression Testing,CUS-737,Testing Subtask,Not Applicable,DE Customer,61c9fde1f3037f006999e4d8,,2021/10/29 10:32,2021/10/29 10:59,,
+Performance Testing,CUS-736,Testing Subtask,Not Applicable,DE Customer,61c9fde1f3037f006999e4d8,,2021/10/29 10:32,2021/10/29 10:57,,
+Functional Test Execution,CUS-735,Testing Subtask,Not Applicable,DE Customer,61c9fde1f3037f006999e4d8,,2021/10/29 10:32,2021/10/29 10:56,,
+Automation Scripting,CUS-734,Testing Subtask,Not Applicable,DE Customer,61c9fde1f3037f006999e4d8,,2021/10/29 10:32,2021/10/29 11:30,,
+Container CPU usage update - vod-ms-invoices (spring-boot) ,CUS-434,Maintenance Task,Done,DE Customer,61c9fde1f3037f006999e4d8,Done,2021/10/13 14:41,2022/08/08 08:09,2022/03/25 15:14,
+AWS Redis caching functionality,CUS-400,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,None,2021/10/06 08:25,2021/11/23 09:28,2022/05/24 04:12,Working on issue CUS-400;10/Nov/21 11:20 AM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;28800
+Log business events,CUS-398,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,None,2021/10/06 08:23,2021/11/25 13:47,2022/05/24 04:13,Changes need to be merged into master branch;10/Nov/21 11:30 AM;ug:0ba0d714-d553-46f7-8f69-ca11875db37d;18000
+Create controller and endpoint,CUS-394,Development Subtask,Done,DE Customer,61c9fde1f3037f006999e4d8,None,2021/10/06 08:17,2022/05/24 04:14,2022/05/24 04:13,
+Test auth in Prod and QA,TRT-1583,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/09/07 09:28,2021/09/09 11:33,2021/09/09 11:33,
+Auto save user project before user is logged out automatically,TRT-1557,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/08/30 09:43,2021/09/02 07:47,2021/09/02 07:47,
+Investigate and implement a way for handling FE constants,TRT-1548,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/08/27 09:39,2021/08/30 09:43,2021/08/30 09:43,
+if authenticated stay on landing page (Canvas),TRT-1530,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/08/17 09:05,2021/08/18 08:06,2021/08/18 08:06,
+manage user session using express session,TRT-1527,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/08/13 08:49,2021/08/17 09:00,2021/08/17 09:00,
+connect FE to refresh endpoint,TRT-1517,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/08/11 09:31,2021/08/13 08:49,2021/08/13 08:49,
+create FE popup with count down timer,TRT-1506,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/08/03 08:36,2021/08/11 09:30,2021/08/11 09:30,
+unit test,TRT-1501,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/07/30 06:30,2021/08/23 08:22,2021/08/23 08:22,
+setting mongoDb locally,TRT-1488,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/07/28 08:22,2021/07/28 08:22,2021/07/28 08:22,
+implement solution,TRT-1469,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/07/26 10:58,2021/08/03 09:30,2021/08/03 08:35,
+Investigate cause of the error,TRT-1468,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/07/26 10:58,2021/07/29 08:59,2021/07/29 08:59,
+Fix Auth Refresh endpoint,TRT-1467,Bug,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/07/26 10:51,2021/09/09 11:33,2021/09/09 11:33,
+create pull request,TRT-1445,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/07/07 09:28,2021/09/07 09:28,2021/09/07 09:28,
+Call AskIT to unlockAccount,TRT-1443,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/07/06 15:18,2021/07/07 09:28,2021/07/07 09:28,
+Incorporate ESlint rules into canvas,TRT-1439,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/07/01 16:05,2021/07/06 15:17,2021/07/06 15:17,
+Get ESlint rules,TRT-1438,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/07/01 16:04,2021/07/01 16:05,2021/07/01 16:05,
+Setup ES-lint rules. ,TRT-1390,Story,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/06/28 13:43,2021/07/06 15:17,2021/07/06 15:17,
+Auth Error handling,TRT-1377,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/06/23 09:27,2021/07/07 09:28,2021/07/07 09:28,
+Implementation assistance,TRT-1360,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/06/14 13:38,2021/07/20 09:27,2021/07/20 09:27,
+UX design walk through,TRT-1359,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/06/14 13:37,2021/06/23 09:27,2021/06/23 09:27,
+Help developers with onBoarding,TRT-1358,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/06/14 13:37,2021/06/21 09:09,2021/06/21 09:09,
+Cater for dynamic data. ,TRT-1306,Sub-task,To Do,Tesseract,61d439b0ce3652006ab7ce72,,2021/05/17 13:55,2021/05/26 09:58,,
+Updating the style. ,TRT-1305,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/05/17 13:51,2021/05/26 09:23,2021/05/26 09:23,
+Ability to generate source. ,TRT-1304,Sub-task,To Do,Tesseract,61d439b0ce3652006ab7ce72,,2021/05/17 13:51,2021/09/02 07:48,,
+Setting up property dock,TRT-1303,Sub-task,To Do,Tesseract,61d439b0ce3652006ab7ce72,,2021/05/17 13:51,2021/09/17 09:43,,
+Position TextArea ,TRT-1281,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/05/04 07:29,2021/05/17 09:32,2021/05/10 15:29,
+Get and Save TextArea Value,TRT-1280,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/05/04 07:25,2021/05/17 09:32,2021/05/09 20:40,
+Hide text area,TRT-1279,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/05/04 07:23,2021/05/17 09:32,2021/05/04 14:05,
+Unit Tests,TRT-1267,Sub-task,To Do,Tesseract,61d439b0ce3652006ab7ce72,,2021/04/19 09:40,2021/05/17 09:32,,
+Pull Request,TRT-1266,Sub-task,To Do,Tesseract,61d439b0ce3652006ab7ce72,,2021/04/19 09:40,2021/05/19 13:47,,
+Store table data on local storage,TRT-1234,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/03/25 11:44,2021/03/26 12:57,2021/03/26 12:57,
+Refactor Table Component Code,TRT-1229,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/03/24 09:28,2021/03/25 09:24,2021/03/25 09:24,
+Delete table row,TRT-1225,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/03/24 07:08,2021/09/16 13:04,2021/09/16 13:04,
+Edit row,TRT-1224,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/03/24 07:08,2021/05/17 09:32,2021/05/04 07:20,
+Add table column,TRT-1223,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/03/24 07:08,2021/05/19 13:30,2021/05/19 13:30,
+Add table row,TRT-1222,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/03/24 07:07,2021/05/17 09:32,2021/05/17 08:58,
+Update appBar Background,TRT-1221,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/03/23 11:22,2021/03/23 15:53,2021/03/23 15:53,
+Update appBar image,TRT-1220,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/03/23 11:22,2021/03/23 15:53,2021/03/23 15:53,
+Make a pull request,TRT-1201,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/03/09 21:17,2021/03/24 10:29,2021/03/24 10:29,
+Create AppBar component,TRT-1200,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/03/09 21:17,2021/03/23 11:22,2021/03/23 11:22,
+Fibre squad peer review,TRT-1199,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/03/09 21:14,2021/03/15 09:33,2021/03/15 09:33,
+Profile squad peer review: Pull request,TRT-1198,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/03/09 21:13,2021/03/15 09:33,2021/03/15 09:33,
+Create demo video for E-sim peer review,TRT-1197,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/03/09 21:12,2021/03/09 21:14,2021/03/09 21:14,
+Try to get access to new screens,TRT-1195,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/03/08 10:53,2021/03/09 21:14,2021/03/09 21:14,
+Data Collection-Khanya,TRT-1190,Task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/03/08 09:43,2021/03/15 09:33,2021/03/15 09:33,
+Profile: Desktop 105 Success Dialogue,TRT-1184,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/03/03 00:03,2021/03/03 02:38,2021/03/03 02:38,
+Profile: Desktop 105 Unsuccessful Dialogue,TRT-1183,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/03/03 00:03,2021/03/03 02:38,2021/03/03 02:38,
+Investigating how to import Material UI Components into Tesseract,TRT-1177,Story,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/03/02 09:42,2021/03/24 10:29,2021/03/24 10:29,
+Profile: Desktop #92,TRT-1175,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/03/01 16:19,2021/03/03 00:01,2021/03/03 00:01,
+Desktop 102: Profile Squad,TRT-1166,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/02/26 13:48,2021/03/01 16:18,2021/03/01 16:18,
+Profile: Screen 06 (Desktop 83),TRT-1143,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/02/12 10:51,2021/02/15 18:07,2021/02/15 18:07,
+Profile: Screen (desktop 87),TRT-1142,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/02/11 09:26,2021/02/12 05:42,2021/02/12 05:42,
+E-sim Screen 05: Number not in context,TRT-1140,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/02/10 12:20,2021/02/18 09:31,2021/02/10 12:24,
+Screen 06: LTE,TRT-1138,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/02/10 08:37,2021/02/26 13:47,2021/02/26 13:47,
+Screen 05: LTE,TRT-1137,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/02/10 08:37,2021/02/25 17:30,2021/02/25 17:30,
+Add Font-family into my system,TRT-1127,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/02/08 21:35,2021/03/03 15:16,2021/03/03 15:16,
+e-sim screen 04 (Terms and Conditions),TRT-1126,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/02/08 21:34,2021/02/09 16:50,2021/02/09 16:49,
+e-sim screen 03 (Success_SMS_sent),TRT-1125,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/02/08 21:34,2021/02/09 14:56,2021/02/09 14:55,
+e-sim screen 02 (Dont qualify),TRT-1124,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/02/08 21:34,2021/02/09 11:29,2021/02/09 11:29,
+e-sim screen 1  (LTE twins),TRT-1123,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/02/08 12:09,2021/02/09 10:03,2021/02/08 21:35,
+Data Collection Kanya,TRT-1120,Story,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/02/08 09:47,2021/03/03 15:16,2021/03/03 15:16,
+Alerting ,AO-8913,Testing Subtask,Done,Application Operations,5b3527d2941e4f3aca7eefcb,Done,2021/02/03 19:22,2021/02/03 19:23,2022/05/22 00:46,Valid Business Error ;03/Feb/21 7:23 PM;ug:5271f452-edbf-46da-83a6-b45078aced8e;3600
+Update Monitoring,AO-8912,Testing Subtask,Done,Application Operations,5b3527d2941e4f3aca7eefcb,Done,2021/02/03 19:22,2021/02/03 19:23,2022/05/22 00:44,Valid Business Error ;03/Feb/21 7:22 PM;ug:5271f452-edbf-46da-83a6-b45078aced8e;3600
+Review Test Coverage,AO-8911,Testing Subtask,Done,Application Operations,5b3527d2941e4f3aca7eefcb,Done,2021/02/03 19:22,2021/02/03 19:22,2022/05/22 00:42,Valid Business Error ;03/Feb/21 7:22 PM;ug:5271f452-edbf-46da-83a6-b45078aced8e;3600
+fix list manager,TRT-1105,Bug,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/01/29 09:39,2021/02/03 09:28,2021/02/03 09:28,
+Alerting ,AO-8651,Testing Subtask,Done,Application Operations,5b3527d2941e4f3aca7eefcb,Done,2021/01/22 12:29,2021/01/22 12:38,2022/05/22 00:38,Valid Business Error;22/Jan/21 12:38 PM;ug:5271f452-edbf-46da-83a6-b45078aced8e;3600
+Update Monitoring,AO-8650,Testing Subtask,Done,Application Operations,5b3527d2941e4f3aca7eefcb,Done,2021/01/22 12:29,2021/01/22 12:37,2022/05/22 00:35,Valid Business Error;22/Jan/21 12:37 PM;ug:5271f452-edbf-46da-83a6-b45078aced8e;3600
+Review Test Coverage,AO-8649,Testing Subtask,Done,Application Operations,5b3527d2941e4f3aca7eefcb,Done,2021/01/22 12:29,2021/01/22 12:37,2022/05/22 00:33,Valid Business Error ;22/Jan/21 12:29 PM;ug:5271f452-edbf-46da-83a6-b45078aced8e;3600
+Alerting ,AO-8615,Testing Subtask,Done,Application Operations,5b3527d2941e4f3aca7eefcb,Done,2021/01/20 11:52,2021/01/20 11:54,2022/05/22 00:35,Valid Business Error. - N/A;20/Jan/21 11:54 AM;ug:5271f452-edbf-46da-83a6-b45078aced8e;3600
+Update Monitoring,AO-8614,Testing Subtask,Done,Application Operations,5b3527d2941e4f3aca7eefcb,Done,2021/01/20 11:52,2021/01/20 11:54,2022/05/22 00:33,Valid Business Error. - N/A;20/Jan/21 11:54 AM;ug:5271f452-edbf-46da-83a6-b45078aced8e;3600
+Review Test Coverage,AO-8613,Testing Subtask,Done,Application Operations,5b3527d2941e4f3aca7eefcb,Done,2021/01/20 11:52,2021/01/20 11:54,2022/05/22 00:31,Valid Business Error. - N/A;20/Jan/21 11:53 AM;ug:5271f452-edbf-46da-83a6-b45078aced8e;3600
+Canvas - Table manager,TRT-1085,Story,In Progress,Tesseract,61d439b0ce3652006ab7ce72,,2021/01/20 09:06,2021/09/20 10:42,,
+Help CVM Team to use Tesseract,TRT-1083,Task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/01/15 09:25,2021/07/26 13:32,2021/07/26 13:32,
+merge development into branch,TRT-1078,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2021/01/13 22:05,2021/01/18 09:27,2021/01/18 09:27,
+Root Cause Analysis (RCA),AO-7746,Task,Done,Application Operations,5b3527d2941e4f3aca7eefcb,Done,2020/12/10 03:51,2023/03/09 12:30,2023/03/09 12:30,
+"ADOBE-App error report (You cannot use the service, because: You haven’t been active on the Vodacom network for the last 3 months. OR You haven’t recharged with at least R29 per month over the last 3 months.) 02/12/2020",AO-7745,Incident,Done,Application Operations,5b3527d2941e4f3aca7eefcb,Done,2020/12/10 03:38,2023/03/09 12:30,2023/03/09 12:30,
+Root Cause Analysis (RCA),AO-7744,Task,Done,Application Operations,5b3527d2941e4f3aca7eefcb,Done,2020/12/10 03:27,2023/03/09 12:31,2023/03/09 12:31,
+"ADOBE-App error report (You cannot use the service, because: You haven’t been active on the Vodacom network for the last 3 months. OR You haven’t recharged with at least R29 per month over the last 3 months.) 02/12/2020",AO-7743,Incident,Done,Application Operations,5b3527d2941e4f3aca7eefcb,Done,2020/12/10 03:03,2023/03/09 12:31,2023/03/09 12:31,
+Root Cause Analysis (RCA),AO-7161,Task,Done,Application Operations,5b3527d2941e4f3aca7eefcb,Done,2020/11/27 13:23,2023/03/09 12:31,2023/03/09 12:31,
+"ADOBE- App Error Report(you cannot use the service, because: you haven’t been active on the vodacom network for the last 3) 25/11/2020",AO-7089,Incident,Done,Application Operations,5b3527d2941e4f3aca7eefcb,Done,2020/11/26 14:40,2023/03/09 12:31,2023/03/09 12:31,
+ADOBE - App Error Report(unfortunately we are having technical issues on this functionality and are working to resolve these) 24/11/2020,AO-6991,Incident,Done,Application Operations,5b3527d2941e4f3aca7eefcb,Done,2020/11/25 11:47,2023/03/09 12:31,2023/03/09 12:31,
+Learn how to build new components,TRT-1068,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/11/16 17:46,2021/01/19 21:38,2021/01/19 21:38,
+unit test,TRT-1067,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/11/12 08:31,2020/11/15 22:59,2020/11/15 22:59,
+update projectService to use context API ,TRT-1064,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/11/10 16:53,2020/11/12 08:30,2020/11/12 08:30,
+Refresh app on logout,TRT-1063,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/11/10 14:23,2020/11/10 14:51,2020/11/10 14:51,
+unit test,TRT-1044,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/11/02 08:47,2020/11/10 16:43,2020/11/10 16:43,
+Clear user cookie on logout,TRT-1043,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/11/02 08:41,2020/11/10 14:22,2020/11/10 14:22,
+secure logout endpoint,TRT-1042,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/11/02 08:41,2020/11/04 07:26,2020/11/04 07:26,
+create logout endpoint,TRT-1041,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/11/02 08:40,2020/11/02 08:40,2020/11/02 08:40,
+Unit test,TRT-1040,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/10/22 15:34,2020/10/30 05:36,2020/10/30 05:36,
+Secure logout: logout from the api,TRT-1039,Task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/10/22 15:33,2020/11/10 16:50,2020/11/10 16:50,
+Replace local storage user data with data from the auth API,TRT-1038,Task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/10/22 15:27,2021/01/19 12:26,2021/01/19 12:26,
+update front-end routes,TRT-1035,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/10/13 09:15,2020/10/22 15:25,2020/10/22 15:25,
+Learn Redis and Express session,TRT-1033,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/10/01 09:07,2020/10/05 21:18,2020/10/05 21:18,
+pull request,TRT-1031,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/09/29 09:18,2021/01/25 09:06,2021/01/25 09:06,
+store refresh token,TRT-1030,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/09/29 09:17,2020/10/13 09:14,2020/10/13 09:14,
+Pull Request,TRT-1021,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/09/16 09:05,2021/05/03 09:37,2021/05/03 09:37,
+Testing,TRT-1020,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/09/16 09:04,2021/05/03 09:37,2021/05/03 09:37,
+learn and setup docker,TRT-1017,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/09/16 05:05,2020/09/29 09:17,2020/09/29 09:17,
+pull request,TRT-1015,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/09/14 13:45,2020/09/21 09:09,2020/09/21 09:09,
+Set cookie domain,TRT-1014,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/09/14 13:45,2020/09/18 08:40,2020/09/18 08:40,
+Save token in a cookie,TRT-1013,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/09/14 13:45,2020/09/14 21:43,2020/09/14 21:43,
+Refresh token,TRT-1000,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/09/08 04:54,2020/09/29 09:16,2020/09/29 09:16,
+set token expiry date,TRT-999,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/09/08 04:53,2020/09/08 05:07,2020/09/08 05:07,
+Token Management,TRT-998,Bug,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/09/08 04:49,2020/10/30 05:44,2020/10/30 05:44,
+allow user to delete a screen,TRT-989,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/09/02 15:06,2020/09/02 15:06,2020/09/02 15:06,
+pull request,TRT-988,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/09/02 15:05,2020/09/03 08:07,2020/09/03 08:07,
+Delete screen,TRT-981,Bug,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/09/02 09:20,2020/09/03 08:07,2020/09/03 08:07,
+Table component,TRT-973,Story,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/08/26 13:27,2021/05/03 09:37,2021/05/03 09:37,
+Pull request,TRT-954,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/07/22 23:34,2020/07/28 15:31,2020/07/28 15:31,
+update frontend routes,TRT-953,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/07/22 13:31,2020/07/22 23:34,2020/07/22 23:34,
+Render login page,TRT-952,Bug,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/07/22 13:22,2020/07/28 15:31,2020/07/28 15:31,
+Bypass Vodacom login,TRT-951,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/07/21 23:38,2020/07/22 13:30,2020/07/22 13:30,
+Pull request,TRT-939,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/07/09 16:40,2020/07/10 06:15,2020/07/10 06:15,
+Local development Port,TRT-938,Bug,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/07/09 16:37,2020/07/10 06:15,2020/07/10 06:15,
+Update CORS in AUTH service,TRT-937,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/07/09 16:20,2020/08/31 10:42,2020/08/31 10:42,
+Test login from production,TRT-936,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/07/09 16:19,2020/08/31 10:42,2020/08/31 10:42,
+CORS policy error,TRT-934,Bug,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/07/09 16:17,2020/09/08 09:24,2020/08/31 10:42,
+Set status code to 401 for inavlid credentials,TRT-914,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/06/29 23:36,2020/07/01 15:33,2020/07/01 15:33,
+Resolve merge conflicts,TRT-913,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/06/29 22:51,2020/07/01 08:27,2020/07/01 08:27,
+Resolve merge conflicts,TRT-912,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/06/29 22:51,2020/07/01 08:27,2020/07/01 08:27,
+Pull request for configMaps,TRT-903,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/06/17 06:20,2020/06/17 10:10,2020/06/17 10:10,
+Setup configMaps for service,TRT-902,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/06/14 17:56,2020/06/17 06:19,2020/06/17 06:19,
+Test if deployed auth service works,TRT-895,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/06/10 16:12,2020/06/29 09:30,2020/06/29 09:30,
+Test Zuulroutes.,TRT-885,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/06/08 15:12,2020/07/01 15:33,2020/07/01 15:33,
+Apply Zuulroutes on NodeJS Service.,TRT-884,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/06/08 15:12,2020/06/17 09:55,2020/06/17 09:55,
+Pull Request for Zuulroutes.,TRT-883,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/06/08 15:11,2020/06/10 16:10,2020/06/10 16:10,
+Create zuulroutes for different environments (DEV/QA/STAG/PROD),TRT-882,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/06/08 15:11,2020/06/10 10:28,2020/06/10 10:28,
+Create Project in Bitbucket ,TRT-881,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/06/08 15:10,2020/06/09 08:29,2020/06/09 08:29,
+Zuulroutes Auth Service,TRT-860,Task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/06/08 14:13,2020/07/01 15:33,2020/07/01 15:33,
+Allow  logged in user to save their project,TRT-845,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/06/02 06:09,2020/06/02 09:05,2020/06/02 09:05,
+Allow logged in user to retrieve all of his/her projects,TRT-841,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/28 16:28,2020/05/28 18:55,2020/05/28 18:55,
+Pull request,TRT-840,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/28 14:10,2020/06/09 16:18,2020/06/09 16:18,
+update account details on auth service,TRT-839,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/28 13:58,2020/06/06 22:39,2020/06/06 22:39,
+Deploy Auth,TRT-838,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/28 13:42,2020/06/10 16:10,2020/06/10 16:10,
+Allow logged in user to drag components on added screen,TRT-783,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/24 09:21,2020/05/29 15:51,2020/05/29 15:51,
+Allow logged in user to delete Project,TRT-782,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/24 09:20,2020/05/29 05:58,2020/05/29 05:58,
+Allow logged in user to duplicate screen,TRT-781,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/24 09:19,2020/06/02 05:38,2020/06/02 05:38,
+Allow logged in user to  delete Screen,TRT-780,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/24 09:19,2020/05/29 09:22,2020/05/29 09:22,
+Allow logged in user to add a screen,TRT-779,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/24 09:19,2020/05/29 08:55,2020/05/29 08:55,
+Pull request,TRT-776,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/21 20:09,2020/07/09 16:16,2020/07/09 16:16,
+Pull request,TRT-772,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/19 17:06,2020/07/09 16:16,2020/07/09 16:16,
+Set start page on load as login screen,TRT-768,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/18 02:51,2020/05/18 05:42,2020/05/18 05:42,
+ESlint errors,TRT-767,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/17 01:08,2020/05/17 03:39,2020/05/17 03:39,
+clean code,TRT-766,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/15 04:48,2020/05/16 23:52,2020/05/16 23:52,
+Pull request,TRT-750,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/11 20:08,2020/07/09 16:15,2020/07/09 16:15,
+Test passport.js,TRT-749,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/11 20:04,2020/05/15 04:47,2020/05/15 04:47,
+Test controller,TRT-748,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/11 20:04,2020/05/14 02:35,2020/05/14 02:35,
+Unit Test,TRT-726,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/11 11:06,2020/05/19 18:34,2020/05/19 18:34,
+Authenticate user if not logged in,TRT-725,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/11 11:04,2020/05/18 21:34,2020/05/18 21:34,
+Add in login screen,TRT-724,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/11 11:03,2020/05/18 05:42,2020/05/18 05:42,
+"On project creation, send project name & Username from JWT token.",TRT-723,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/11 11:03,2020/05/19 17:00,2020/05/19 17:00,
+Redirect user to Tesseract landing page,TRT-722,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/11 11:03,2020/05/18 02:49,2020/05/18 02:49,
+Store Token to local storage,TRT-721,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/11 11:02,2020/05/18 02:49,2020/05/18 02:49,
+Call Auth Service EndPoint to get user token,TRT-720,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/11 11:01,2020/05/18 02:49,2020/05/18 02:49,
+Retrieve project by userName,TRT-719,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/11 10:50,2020/05/27 20:06,2020/05/27 20:06,
+Add userName to abstract layer,TRT-718,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/11 10:49,2020/05/21 19:59,2020/05/21 19:59,
+Add username to project Model,TRT-717,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/11 10:49,2020/05/18 21:23,2020/05/18 21:23,
+Unit Test,TRT-716,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/11 10:48,2020/06/04 09:23,2020/06/04 09:23,
+Send new project model from frontend,TRT-715,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/11 10:47,2020/05/19 17:06,2020/05/19 17:06,
+Authenticate user on ldap,TRT-700,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/05 14:30,2020/05/11 20:03,2020/05/07 20:40,
+Generate user token when a user provides correct ldap credentials,TRT-699,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/05 14:29,2020/05/11 20:03,2020/05/07 22:57,
+Clean code ,TRT-697,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/05/04 08:07,2020/05/11 20:03,2020/05/11 09:28,
+Setup and test unit test framework,TRT-690,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/04/29 12:17,2020/05/13 02:43,2020/05/13 02:43,
+Integrate Auth into Backend,TRT-689,Story,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/04/29 12:16,2020/07/09 16:16,2020/07/09 16:16,
+Integrating Auth into Frontend,TRT-688,Story,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/04/29 12:16,2020/07/09 16:16,2020/07/09 16:16,
+Learn how to use Swagger Security definitions,TRT-686,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/04/28 15:59,2020/05/11 20:03,2020/04/30 12:49,
+generate user token using in memory storage,TRT-685,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/04/28 15:58,2020/05/11 20:03,2020/05/04 08:05,
+Initialise Ldap using environment variables,TRT-656,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/04/14 16:23,2020/05/05 14:28,2020/05/05 14:28,
+Deploy the Node Auth service,TRT-655,Story,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/04/14 16:13,2020/07/09 16:15,2020/07/09 16:15,
+Write MS unit test,TRT-615,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/04/02 10:24,2020/04/14 10:12,2020/04/14 10:12,
+Learn how to do an MS unit test,TRT-614,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/04/02 10:23,2020/04/03 09:25,2020/04/03 09:25,
+Setup and Learn the Node JS template,TRT-613,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/04/02 10:22,2020/05/17 01:07,2020/05/17 01:07,
+Create Pull request,TRT-597,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/03/26 10:51,2020/04/14 15:40,2020/04/14 15:40,
+Send username and project name using Canvas,TRT-595,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/03/25 09:35,2020/03/25 14:49,2020/03/25 14:49,
+Send as request project name and username as an object,TRT-584,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/03/18 23:41,2020/03/25 09:33,2020/03/25 09:33,
+Pull request for front-end,TRT-581,Sub-task,In Progress,Tesseract,61d439b0ce3652006ab7ce72,,2020/03/18 00:02,2020/04/14 10:15,,
+Return user name with project name/id,TRT-571,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/03/17 12:21,2020/03/18 07:40,2020/03/18 07:40,
+Add user names to projects,TRT-570,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/03/17 12:20,2020/03/18 00:02,2020/03/17 22:48,
+Merge to Master,TRT-569,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/03/17 12:20,2020/04/14 10:15,2020/04/14 10:15,
+Remove LDAP validation,TRT-568,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/03/17 12:20,2020/03/17 21:48,2020/03/17 21:48,
+Login to Tesseract,TRT-567,Story,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/03/17 12:20,2020/05/27 15:26,2020/05/27 15:26,
+Code Repo ,TRT-565,Story,To Do,Tesseract,61d439b0ce3652006ab7ce72,,2020/03/16 12:48,2021/06/14 13:58,,
+Presentation prep,TRT-550,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/03/12 08:36,2020/03/16 09:48,2020/03/16 09:48,
+Unit test for login,TRT-541,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/03/02 21:29,2020/03/06 10:35,2020/03/06 10:35,
+"Test login on Chrome, Firefox and Safari",TRT-522,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/02/25 08:09,2020/03/02 08:27,2020/03/02 08:27,
+Set token key to be Tesseract specific,TRT-521,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/02/25 08:06,2020/02/25 08:08,2020/02/25 08:08,
+Implement routing based on generated Token,TRT-517,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/02/24 08:52,2020/02/25 08:05,2020/02/25 08:05,
+Connect updated login page styling to Node JS server,TRT-502,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/02/18 11:04,2020/03/02 15:29,2020/03/02 15:29,
+Authorise user after authentication,TRT-501,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/02/18 11:03,2020/02/21 08:03,2020/02/21 08:03,
+Research on cookies vs jwt,TRT-500,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/02/18 11:01,2020/02/20 08:07,2020/02/20 08:07,
+Setup TAP ldap development certificate,TRT-499,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/02/18 11:00,2020/02/28 06:52,2020/02/28 06:52,
+Code clean up,TRT-482,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/01/28 10:13,2020/03/03 14:49,2020/03/03 14:49,
+Speak to William Reeler,TRT-469,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/01/24 09:20,2020/01/24 09:20,2020/01/24 09:20,
+Create documentation on how ussd works,TRT-468,Task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/01/24 09:19,2020/02/11 15:21,2020/02/11 15:21,
+Investigate USSD Integration. ,TRT-465,Task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/01/20 10:18,2020/02/03 10:28,2020/02/03 10:28,
+Update Unit test information on confluence,TRT-463,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2020/01/15 21:10,2020/01/17 07:46,2020/01/17 07:46,
+Unit Test for Canvas Property Dock,TRT-427,Task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/11/25 10:24,2020/01/14 10:27,2020/01/14 10:27,
+Cater for different screen sizes,TRT-416,Task,To Do,Tesseract,61d439b0ce3652006ab7ce72,,2019/11/13 08:29,2021/08/23 14:02,,
+Update login page styling,TRT-390,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/11/11 11:03,2020/03/03 09:04,2020/03/03 09:04,
+Connect to LDAP to validate user,TRT-389,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/11/11 11:02,2020/03/03 14:23,2020/03/03 14:23,
+Add Bootstrap to Tesseract,TRT-388,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/11/11 11:01,2019/11/11 15:56,2019/11/11 15:56,
+Store generated token to allow user to access secure resources,TRT-387,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/11/11 10:57,2020/02/24 08:51,2020/02/24 08:51,
+Testing,TRT-383,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/11/11 10:45,2020/01/15 09:10,2020/01/15 09:10,
+Update styling on Login screen,TRT-374,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/11/06 15:36,2019/11/13 01:38,2019/11/13 01:38,
+Property Dock - Preview,TRT-373,Story,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/11/06 15:30,2020/01/20 10:08,2020/01/20 10:08,
+Waiting for ARM Take-on Application to be approved,TRT-363,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/10/31 11:20,2019/11/05 10:48,2019/11/05 10:48,
+User authentication,TRT-345,Story,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/10/28 11:11,2022/05/24 03:20,2020/03/09 14:51,
+Test,TRT-344,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/10/28 11:09,2019/11/13 08:26,2019/11/13 08:26,
+Pull request,TRT-343,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/10/28 11:08,2020/03/09 14:51,2020/03/09 14:51,
+React Login Screen,TRT-342,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/10/28 11:08,2019/11/06 15:35,2019/11/06 15:35,
+White Pages access,TRT-341,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/10/28 11:07,2019/10/31 11:19,2019/10/31 11:19,
+Create pull Request,TRT-336,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/10/28 00:41,2019/10/28 10:03,2019/10/28 10:03,
+Learn how to use Active Directory,TRT-334,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/10/23 14:08,2019/11/11 10:53,2019/11/11 10:53,
+Document how to use Enzyme and Jest on Confluence,TRT-332,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/10/23 09:13,2019/10/28 00:41,2019/10/28 00:41,
+Speak to Krishin about Automation testing,TRT-324,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/10/22 06:18,2019/10/22 10:10,2019/10/22 10:10,
+Create unit test,TRT-323,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/10/22 06:16,2019/10/28 00:41,2019/10/28 00:41,
+Waiting for pull request to be approved 😎,TRT-304,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/10/15 16:16,2019/10/16 10:28,2019/10/16 10:28,
+Change the value of the cancel and update based on what the child component is.,TRT-281,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/10/11 09:32,2019/10/15 16:08,2019/10/15 16:08,
+Use Modal View for List Manager,TRT-280,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/10/11 08:45,2019/10/15 10:52,2019/10/15 10:52,
+Document how to use component on confluence,TRT-279,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/10/05 02:25,2019/10/11 09:21,2019/10/11 09:21,
+Clicking duplicate does not update the tree view in the web design view,TRT-268,Bug,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/10/03 13:10,2019/10/28 10:03,2019/10/28 10:03,
+Speak to Greg about how to implement Modal View,TRT-262,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/10/03 09:29,2019/10/03 11:16,2019/10/03 11:12,
+Pull request,TRT-254,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/09/30 10:37,2019/10/15 16:16,2019/10/15 16:16,
+test design,TRT-253,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/09/30 10:37,2019/10/11 08:34,2019/10/11 08:34,
+Do research on how to implement modal view,TRT-252,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/09/30 10:36,2019/10/04 10:17,2019/10/04 10:17,
+Design generic modal,TRT-251,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/09/30 10:36,2019/10/05 01:47,2019/10/05 01:47,
+Remove components does not update PropertySpace,TRT-240,Bug,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/09/30 10:17,2020/04/14 15:40,2020/04/14 15:40,
+Create pull request,TRT-235,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/09/27 08:57,2019/10/04 10:09,2019/10/04 10:09,
+Style list manager on canvas - Pop up modal,TRT-222,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/09/16 11:00,2019/09/27 08:57,2019/09/27 08:57,
+Style list manager on canvas - List container,TRT-221,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/09/16 11:00,2019/09/27 08:57,2019/09/27 08:57,
+Style drop down to match VSG,TRT-220,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/09/16 10:58,2019/09/27 08:57,2019/09/27 08:57,
+Style list manager on canvas - Main Container,TRT-219,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/09/16 10:58,2019/09/27 08:56,2019/09/27 08:56,
+New value in list manager pop up ,TRT-218,Sub-task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/09/16 10:58,2019/09/27 08:56,2019/09/27 08:56,
+Unit Test - SonarQube Integration,TRT-198,Task,To Do,Tesseract,61d439b0ce3652006ab7ce72,,2019/09/02 10:02,2020/08/26 11:38,,
+Canvas - Create component manifest when artifact is generated,TRT-176,Task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/07/22 10:34,2019/08/05 10:06,2019/08/05 10:06,
+Canvas - Add in margin and padding property on all components,TRT-168,Task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/07/22 10:20,2019/07/23 10:30,2019/07/23 10:05,
+Component Styling - TextBox,TRT-142,Task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/06/26 10:33,2019/06/28 12:18,2019/06/28 12:18,
+Component Styling - Label,TRT-141,Task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/06/24 10:26,2019/06/28 12:18,2019/06/28 12:18,
+Fix warning when compiling project,TRT-140,Task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/06/24 10:25,2019/07/01 14:08,2019/07/01 14:08,
+Restyling Tesseract/Canvas look and feel,TRT-139,Task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/06/24 10:22,2019/07/08 10:10,2019/07/08 10:10,
+Component Styling - Button,TRT-133,Task,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/06/24 10:16,2019/06/25 13:55,2019/06/25 13:55,
+Modal View ,TRT-112,Story,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/05/27 10:17,2019/10/16 10:28,2019/10/16 10:28,
+"As a user, I would like to be able to hookup a static list to a dropdown box",TRT-18,Story,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/04/10 16:55,2019/10/14 10:04,2019/10/04 10:09,
+Capture a static list,TRT-13,Story,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/04/10 16:50,2019/09/13 13:07,2019/09/13 13:07,
+"As a user, I would like to re-use my credentials from an AD provider ",TRT-6,Story,Done,Tesseract,61d439b0ce3652006ab7ce72,Done,2019/04/10 15:21,2020/02/04 09:11,2020/02/04 09:11,

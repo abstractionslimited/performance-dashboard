@@ -3,318 +3,628 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grouped Tickets</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-    <style>
-        /* Table styles */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 1.5rem;
-        }
-        th, td {
-            padding: 0.5rem;
-            text-align: left;
-            border: 1px solid #e2e8f0;
-        }
-        th {
-            background-color: #f8fafc;
-            font-weight: 600;
-        }
-        tr:nth-child(even) {
-            background-color: #f8fafc;
-        }
-        
-        /* Section styles */
-        .section-container {
-            background-color: white;
-            border-radius: 0.5rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        /* Typography */
-        h1 {
-            font-size: 1.875rem;
-            font-weight: bold;
-            margin-bottom: 1.5rem;
-        }
-        h2 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-        h3 {
-            font-size: 1.25rem;
-            font-weight: 500;
-            margin-bottom: 0.75rem;
-        }
-        .font-bold {
-            font-weight: bold;
-        }
-        .mb-4 {
-            margin-bottom: 1rem;
-        }
-        ul {
-            list-style-type: disc;
-            margin-left: 1.5rem;
-            margin-bottom: 1rem;
-        }
-        li {
-            margin-bottom: 0.5rem;
-        }
-
-        /* Progress bar */
-        .progress-container {
-            width: 100%;
-            background-color: #e5e7eb;
-            border-radius: 9999px;
-            height: 0.625rem;
-            margin-bottom: 1rem;
-        }
-        .progress-bar {
-            background-color: #2563eb;
-            height: 0.625rem;
-            border-radius: 9999px;
-        }
-        
-        /* Grid layouts */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 0.75rem;
-        }
-        .stat-card {
-            background-color: #f9fafb;
-            padding: 0.75rem;
-            border-radius: 0.25rem;
-        }
-        .stat-label {
-            color: #6b7280;
-            font-size: 0.875rem;
-        }
-        .stat-value {
-            font-weight: 600;
-            font-size: 1.125rem;
-        }
-        
-        /* Flex utilities */
-        .flex-between {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 0.5rem;
-        }
-    </style>
+    <title>Ticket Analysis - Jira Performance Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.0.1/build/global/luxon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0"></script>
 </head>
-<body class="bg-gray-100">
-    <!-- Navigation -->
-    <div class="nav-container">
-        <div class="nav-content">
-            <div class="nav-title">Performance Reports</div>
-            <div class="nav-links">
-                <a href="index.html" class="nav-link">Dashboard</a>
-                <a href="report.html" class="nav-link">Performance Report</a>
-                <a href="tickets.html" class="nav-link active">Grouped Tickets</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="max-w-6xl mx-auto p-4">
-        <div class="section-container">
-            <h1>Completed Tickets Grouped by Project</h1>
-            
-            <!-- Statistics Section -->
-            <div class="section-container">
-                <h2>Ticket Statistics</h2>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
-                    <!-- Overall Progress -->
-                    <div style="background: white; padding: 1rem; border-radius: 0.375rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-                        <h3>Overall Progress</h3>
-                        <div class="mb-4">
-                            <div class="flex-between">
-                                <span class="font-bold">Completed</span>
-                                <span>51/55 (92.7%)</span>
-                            </div>
-                            <div class="progress-container">
-                                <div class="progress-bar" style="width: 92.7%"></div>
-                            </div>
-                        </div>
-                        <div class="stats-grid">
-                            <div class="stat-card">
-                                <p class="stat-label">Total Tickets</p>
-                                <p class="stat-value">55</p>
-                            </div>
-                            <div class="stat-card">
-                                <p class="stat-label">In Progress</p>
-                                <p class="stat-value">1</p>
-                            </div>
-                            <div class="stat-card">
-                                <p class="stat-label">Completed</p>
-                                <p class="stat-value">51</p>
-                            </div>
-                            <div class="stat-card">
-                                <p class="stat-label">Cancelled</p>
-                                <p class="stat-value">3</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Ticket Types -->
-                    <div style="background: white; padding: 1rem; border-radius: 0.375rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
-                        <h3>Ticket Types</h3>
-                        <div class="stats-grid">
-                            <div class="stat-card">
-                                <p class="stat-label">Development Subtasks</p>
-                                <p class="stat-value">39 (70.9%)</p>
-                            </div>
-                            <div class="stat-card">
-                                <p class="stat-label">Maintenance Tasks</p>
-                                <p class="stat-value">7 (12.7%)</p>
-                            </div>
-                            <div class="stat-card">
-                                <p class="stat-label">Review Subtasks</p>
-                                <p class="stat-value">4 (7.3%)</p>
-                            </div>
-                            <div class="stat-card">
-                                <p class="stat-label">Story Tickets</p>
-                                <p class="stat-value">3 (5.5%)</p>
-                            </div>
-                            <div class="stat-card">
-                                <p class="stat-label">Other (Task/Defect)</p>
-                                <p class="stat-value">2 (3.6%)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Squad Impact Section -->
-            <div class="section-container">
-                <h2>Squad Impact</h2>
-                <p class="mb-4">
-                    The work represented in these tickets demonstrates significant impact across 4 different squads:
-                </p>
-                <ul>
-                    <li><span class="font-bold">1App Squad:</span> Work on Summer 2024 campaign, Recharge with Pin Journey, Apollo Federation Migration</li>
-                    <li><span class="font-bold">Fibre Squad:</span> Development of 1App Homepage Redesign and mobile upsell for fiber profiles</li>
-                    <li><span class="font-bold">Vodacom Business Squad:</span> Integration with business systems and services</li>
-                    <li><span class="font-bold">Services Squad:</span> NI Migration for the Pay My Bill service and infrastructure improvements</li>
-                </ul>
-                <p>
-                    This cross-squad impact highlights versatility and ability to collaborate effectively across different business domains.
-                </p>
-            </div>
-            
-            <!-- Homepage Redesign Project -->
-            <div class="section-container">
-                <h2>1. Homepage Redesign</h2>
-                <p><span class="font-bold">Total Tickets:</span> 5</p>
-                <p><span class="font-bold">Status:</span> All Done</p>
-                <p><span class="font-bold">Date Range:</span> Nov 7, 2024 - Nov 12, 2024</p>
-                
-                <div style="overflow-x: auto;">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Ticket</th>
-                                <th>Key</th>
-                                <th>Type</th>
-                                <th>Status</th>
-                                <th>Created</th>
-                                <th>Resolved</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Process 6 cards</td>
-                                <td>PAPP-6119</td>
-                                <td>Development Subtask</td>
-                                <td>Done</td>
-                                <td>2024/11/12</td>
-                                <td>2024/11/13</td>
-                            </tr>
-                            <tr>
-                                <td>Process 4 cards</td>
-                                <td>PAPP-6120</td>
-                                <td>Development Subtask</td>
-                                <td>Done</td>
-                                <td>2024/11/12</td>
-                                <td>2024/11/13</td>
-                            </tr>
-                            <tr>
-                                <td>Display cards without view all balances if cards less than 4</td>
-                                <td>PAPP-6118</td>
-                                <td>Development Subtask</td>
-                                <td>Done</td>
-                                <td>2024/11/12</td>
-                                <td>2024/11/12</td>
-                            </tr>
-                            <tr>
-                                <td>If there are four or more cards then show View all balances</td>
-                                <td>PAPP-6117</td>
-                                <td>Development Subtask</td>
-                                <td>Done</td>
-                                <td>2024/11/12</td>
-                                <td>2024/11/12</td>
-                            </tr>
-                            <tr>
-                                <td>View all balances accordion</td>
-                                <td>PAPP-6094</td>
-                                <td>Development Subtask</td>
-                                <td>Done</td>
-                                <td>2024/11/07</td>
-                                <td>2024/11/12</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            
-            <!-- VodaPay Home Page Redesign Project -->
-            <div class="section-container">
-                <h2>2. VodaPay Home Page Redesign</h2>
-                <p><span class="font-bold">Total Tickets:</span> 4</p>
-                <p><span class="font-bold">Status:</span> All Done</p>
-                <p><span class="font-bold">Date Range:</span> Nov 5, 2024 - Nov 10, 2024</p>
-                
-                <div style="overflow-x: auto;">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Ticket</th>
-                                <th>Key</th>
-                                <th>Type</th>
-                                <th>Status</th>
-                                <th>Created</th>
-                                <th>Resolved</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Implement hero banner</td>
-                                <td>PAPP-6090</td>
-                                <td>Development Subtask</td>
-                                <td>Done</td>
-                                <td>2024/11/05</td>
-                                <td>2024/11/10</td>
-                            </tr>
-                            <tr>
-                                <td>Build navigation menu</td>
-                                <td>PAPP-6091</td>
-                                <td>Development Subtask</td>
-                                <td>Done</td>
-                                <td>2024/11/05</td>
-                                <td>2024/11/09</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
+<body>
+    <header>
+        <h1>Jira Performance Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Overview</a></li>
+                <li><a href="tickets.html" class="active">Ticket Analysis</a></li>
+                <li><a href="report.html">Reports</a></li>
+            </ul>
+        </nav>
+    </header>
     
+    <main>
+        <div class="dashboard-container">
+            <div class="filters-section">
+                <h2>Ticket Analysis</h2>
+                <div class="filter-controls">
+                    <div class="filter-group">
+                        <label for="status-filter">Status:</label>
+                        <select id="status-filter">
+                            <option value="all">All Statuses</option>
+                            <!-- Options will be added dynamically -->
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="type-filter">Issue Type:</label>
+                        <select id="type-filter">
+                            <option value="all">All Types</option>
+                            <!-- Options will be added dynamically -->
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="priority-filter">Priority:</label>
+                        <select id="priority-filter">
+                            <option value="all">All Priorities</option>
+                            <!-- Options will be added dynamically -->
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="date-range">Date Range:</label>
+                        <select id="date-range">
+                            <option value="all">All Time</option>
+                            <option value="last30">Last 30 Days</option>
+                            <option value="last90">Last 90 Days</option>
+                            <option value="last180">Last 180 Days</option>
+                            <option value="custom">Custom Range</option>
+                        </select>
+                    </div>
+                    <button id="apply-filters" class="filter-button">Apply Filters</button>
+                    <button id="reset-filters" class="filter-button reset">Reset</button>
+                </div>
+            </div>
+
+            <div class="chart-grid">
+                <div class="chart-container">
+                    <h3>Issue Creation vs Resolution</h3>
+                    <canvas id="issue-trend-chart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Cumulative Flow</h3>
+                    <canvas id="flow-chart"></canvas>
+                </div>
+            </div>
+
+            <div class="tickets-section">
+                <h3>Filtered Tickets (Showing <span id="tickets-count">0</span> tickets)</h3>
+                <div class="tickets-table-container">
+                    <table id="tickets-table" class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Key</th>
+                                <th>Summary</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Priority</th>
+                                <th>Assignee</th>
+                                <th>Created</th>
+                                <th>Updated</th>
+                                <th>Resolution Days</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Tickets will be populated dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Jira Performance Dashboard - Updated: <span id="last-updated"></span></p>
+    </footer>
+
     <script src="navigation.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let jiraData = [];
+            let filteredData = [];
+            let statusOptions = ['all'];
+            let typeOptions = ['all'];
+            let priorityOptions = ['all'];
+
+            // Initialize
+            loadJiraData();
+            updateLastUpdated();
+
+            // Load the Jira data
+            function loadJiraData() {
+                const csvFilePath = "Jira Export CSV (all fields) 20250326114301.csv";
+                
+                fetch(csvFilePath)
+                    .then(response => response.text())
+                    .then(data => {
+                        processCSVData(data);
+                        updateFilterOptions();
+                        applyFilters();
+                        updateVisualizations();
+                    })
+                    .catch(error => {
+                        console.error("Error loading Jira data:", error);
+                    });
+            }
+
+            // Process the CSV data
+            function processCSVData(csvText) {
+                // Reuse the same CSV parsing logic from dashboard.js
+                const lines = csvText.split('\n');
+                const headers = lines[0].split(',');
+                
+                const columnMap = {
+                    summary: headers.indexOf('Summary'),
+                    key: headers.indexOf('Issue key'),
+                    issueType: headers.indexOf('Issue Type'),
+                    status: headers.indexOf('Status'),
+                    projectName: headers.indexOf('Project name'),
+                    resolution: headers.indexOf('Resolution'),
+                    created: headers.indexOf('Created'),
+                    updated: headers.indexOf('Updated'),
+                    resolved: headers.indexOf('Resolved'),
+                    logWork: headers.indexOf('Log Work')
+                };
+                
+                for (let i = 1; i < lines.length; i++) {
+                    if (!lines[i].trim()) continue;
+                    
+                    let row = parseCSVLine(lines[i]);
+                    
+                    if (row.length < Object.values(columnMap).filter(idx => idx !== -1).length) {
+                        continue;
+                    }
+                    
+                    const issue = {
+                        summary: columnMap.summary !== -1 ? row[columnMap.summary] : '',
+                        key: columnMap.key !== -1 ? row[columnMap.key] : '',
+                        issueType: columnMap.issueType !== -1 ? row[columnMap.issueType] : '',
+                        status: columnMap.status !== -1 ? row[columnMap.status] : '',
+                        projectName: columnMap.projectName !== -1 ? row[columnMap.projectName] : '',
+                        priority: 'Medium', // Default priority since it's not in the simplified CSV
+                        assignee: 'Khanya Kupelo', // Default assignee
+                        created: columnMap.created !== -1 ? parseDate(row[columnMap.created]) : null,
+                        updated: columnMap.updated !== -1 ? parseDate(row[columnMap.updated]) : null,
+                        resolved: columnMap.resolved !== -1 ? parseDate(row[columnMap.resolved]) : null,
+                        logWork: columnMap.logWork !== -1 ? row[columnMap.logWork] : '',
+                        resolutionDays: 0
+                    };
+                    
+                    // Calculate resolution days
+                    if (issue.resolved && issue.created) {
+                        issue.resolutionDays = Math.round((issue.resolved - issue.created) / (1000 * 60 * 60 * 24));
+                    }
+                    
+                    if (issue.key) {
+                        jiraData.push(issue);
+                    }
+                }
+            }
+
+            // Helper function to parse a CSV line
+            function parseCSVLine(line) {
+                const result = [];
+                let inQuotes = false;
+                let currentValue = '';
+                
+                for (let i = 0; i < line.length; i++) {
+                    const char = line[i];
+                    
+                    if (char === '"') {
+                        inQuotes = !inQuotes;
+                    } else if (char === ',' && !inQuotes) {
+                        result.push(currentValue);
+                        currentValue = '';
+                    } else {
+                        currentValue += char;
+                    }
+                }
+                
+                result.push(currentValue);
+                return result;
+            }
+
+            // Parse date string to Date object (same as in dashboard.js)
+            function parseDate(dateString) {
+                if (!dateString) return null;
+                
+                const formats = [
+                    /(\d{1,2})\/(\w{3})\/(\d{2}) (\d{1,2}):(\d{2}) (AM|PM)/,  // 17/Mar/25 10:10 AM
+                    /(\d{4})\/(\d{2})\/(\d{2}) (\d{2}):(\d{2})/,              // 2025/03/17 10:10
+                    /(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})/         // ISO format
+                ];
+                
+                for (const format of formats) {
+                    if (format.test(dateString)) {
+                        if (format === formats[0]) {
+                            const match = dateString.match(format);
+                            if (match) {
+                                const [_, day, monthStr, year, hours, minutes, ampm] = match;
+                                const months = {'Jan': 0, 'Feb': 1, 'Mar': 2, 'Apr': 3, 'May': 4, 'Jun': 5, 
+                                              'Jul': 6, 'Aug': 7, 'Sep': 8, 'Oct': 9, 'Nov': 10, 'Dec': 11};
+                                
+                                let hour = parseInt(hours);
+                                if (ampm === 'PM' && hour < 12) hour += 12;
+                                if (ampm === 'AM' && hour === 12) hour = 0;
+                                
+                                return new Date(2000 + parseInt(year), months[monthStr], parseInt(day), hour, parseInt(minutes));
+                            }
+                        } else if (format === formats[1]) {
+                            // For YYYY/MM/DD HH:MM format
+                            const match = dateString.match(format);
+                            if (match) {
+                                const [_, year, month, day, hours, minutes] = match;
+                                return new Date(parseInt(year), parseInt(month) - 1, parseInt(day), parseInt(hours), parseInt(minutes));
+                            }
+                        } else {
+                            // For ISO format
+                            return new Date(dateString);
+                        }
+                    }
+                }
+                
+                // Fallback to direct parsing
+                return new Date(dateString);
+            }
+
+            // Update the filter options
+            function updateFilterOptions() {
+                const statusFilter = document.getElementById('status-filter');
+                const typeFilter = document.getElementById('type-filter');
+                const priorityFilter = document.getElementById('priority-filter');
+                
+                // Get unique values
+                const statuses = [...new Set(jiraData.map(issue => issue.status))].filter(Boolean).sort();
+                const types = [...new Set(jiraData.map(issue => issue.issueType))].filter(Boolean).sort();
+                const priorities = [...new Set(jiraData.map(issue => issue.priority))].filter(Boolean).sort();
+                
+                // Clear existing options (except "All")
+                statusFilter.innerHTML = '<option value="all">All Statuses</option>';
+                typeFilter.innerHTML = '<option value="all">All Types</option>';
+                priorityFilter.innerHTML = '<option value="all">All Priorities</option>';
+                
+                // Add status options
+                statuses.forEach(status => {
+                    const option = document.createElement('option');
+                    option.value = status;
+                    option.textContent = status;
+                    statusFilter.appendChild(option);
+                });
+                
+                // Add type options
+                types.forEach(type => {
+                    const option = document.createElement('option');
+                    option.value = type;
+                    option.textContent = type;
+                    typeFilter.appendChild(option);
+                });
+                
+                // Add priority options
+                priorities.forEach(priority => {
+                    const option = document.createElement('option');
+                    option.value = priority;
+                    option.textContent = priority;
+                    priorityFilter.appendChild(option);
+                });
+            }
+
+            // Apply filters
+            function applyFilters() {
+                const statusFilter = document.getElementById('status-filter').value;
+                const typeFilter = document.getElementById('type-filter').value;
+                const priorityFilter = document.getElementById('priority-filter').value;
+                const dateRange = document.getElementById('date-range').value;
+                
+                // Filter the data
+                filteredData = jiraData.filter(issue => {
+                    // Status filter
+                    if (statusFilter !== 'all' && issue.status !== statusFilter) {
+                        return false;
+                    }
+                    
+                    // Type filter
+                    if (typeFilter !== 'all' && issue.issueType !== typeFilter) {
+                        return false;
+                    }
+                    
+                    // Priority filter
+                    if (priorityFilter !== 'all' && issue.priority !== priorityFilter) {
+                        return false;
+                    }
+                    
+                    // Date range filter
+                    if (dateRange !== 'all' && issue.created) {
+                        const now = new Date();
+                        const days = {
+                            'last30': 30,
+                            'last90': 90,
+                            'last180': 180
+                        };
+                        
+                        if (dateRange in days) {
+                            const cutoff = new Date(now.getTime() - days[dateRange] * 24 * 60 * 60 * 1000);
+                            return issue.created >= cutoff;
+                        }
+                    }
+                    
+                    return true;
+                });
+                
+                // Update the UI
+                updateTable();
+                updateVisualizations();
+            }
+
+            // Update the tickets table
+            function updateTable() {
+                const table = document.getElementById('tickets-table').getElementsByTagName('tbody')[0];
+                const countDisplay = document.getElementById('tickets-count');
+                
+                // Clear the table
+                table.innerHTML = '';
+                
+                // Update the count
+                countDisplay.textContent = filteredData.length;
+                
+                // Add rows to table
+                filteredData.forEach(issue => {
+                    const row = table.insertRow();
+                    
+                    // Add cells
+                    const keyCell = row.insertCell(0);
+                    const summaryCell = row.insertCell(1);
+                    const typeCell = row.insertCell(2);
+                    const statusCell = row.insertCell(3);
+                    const priorityCell = row.insertCell(4);
+                    const assigneeCell = row.insertCell(5);
+                    const createdCell = row.insertCell(6);
+                    const updatedCell = row.insertCell(7);
+                    const resolutionDaysCell = row.insertCell(8);
+                    
+                    // Set cell values
+                    keyCell.textContent = issue.key;
+                    summaryCell.textContent = issue.summary;
+                    typeCell.textContent = issue.issueType;
+                    statusCell.textContent = issue.status;
+                    priorityCell.textContent = issue.priority;
+                    assigneeCell.textContent = issue.assignee;
+                    createdCell.textContent = issue.created ? issue.created.toLocaleDateString() : '';
+                    updatedCell.textContent = issue.updated ? issue.updated.toLocaleDateString() : '';
+                    resolutionDaysCell.textContent = issue.resolutionDays || '-';
+                    
+                    // Add status class
+                    if (issue.status === 'Done' || issue.status === 'Closed' || issue.status === 'Resolved') {
+                        statusCell.classList.add('status-done');
+                    } else if (issue.status === 'In Progress' || issue.status === 'Doing') {
+                        statusCell.classList.add('status-progress');
+                    } else if (issue.status === 'Blocked') {
+                        statusCell.classList.add('status-blocked');
+                    }
+                    
+                    // Add priority class
+                    if (issue.priority === 'Highest' || issue.priority === 'High') {
+                        priorityCell.classList.add('priority-high');
+                    } else if (issue.priority === 'Medium') {
+                        priorityCell.classList.add('priority-medium');
+                    } else if (issue.priority === 'Low' || issue.priority === 'Lowest') {
+                        priorityCell.classList.add('priority-low');
+                    }
+                });
+            }
+
+            // Update the visualizations
+            function updateVisualizations() {
+                updateTrendChart();
+                updateFlowChart();
+            }
+
+            // Update the issue trend chart
+            function updateTrendChart() {
+                const ctx = document.getElementById('issue-trend-chart').getContext('2d');
+                
+                // Get the data
+                const dateMap = new Map();
+                const now = new Date();
+                const sixMonthsAgo = new Date(now.getFullYear(), now.getMonth() - 6, 1);
+                
+                // Create array of all months
+                let currentDate = new Date(sixMonthsAgo);
+                while (currentDate <= now) {
+                    const yearMonth = `${currentDate.getFullYear()}-${String(currentDate.getMonth() + 1).padStart(2, '0')}`;
+                    dateMap.set(yearMonth, { created: 0, resolved: 0 });
+                    currentDate.setMonth(currentDate.getMonth() + 1);
+                }
+                
+                // Count created issues by month
+                filteredData.forEach(issue => {
+                    if (issue.created && issue.created >= sixMonthsAgo) {
+                        const yearMonth = `${issue.created.getFullYear()}-${String(issue.created.getMonth() + 1).padStart(2, '0')}`;
+                        if (dateMap.has(yearMonth)) {
+                            dateMap.get(yearMonth).created++;
+                        }
+                    }
+                    
+                    if (issue.resolved && issue.resolved >= sixMonthsAgo) {
+                        const yearMonth = `${issue.resolved.getFullYear()}-${String(issue.resolved.getMonth() + 1).padStart(2, '0')}`;
+                        if (dateMap.has(yearMonth)) {
+                            dateMap.get(yearMonth).resolved++;
+                        }
+                    }
+                });
+                
+                // Convert to arrays for Chart.js
+                const labels = Array.from(dateMap.keys());
+                const createdData = Array.from(dateMap.values()).map(v => v.created);
+                const resolvedData = Array.from(dateMap.values()).map(v => v.resolved);
+                
+                // Format labels (YYYY-MM to MMM YYYY)
+                const formattedLabels = labels.map(ym => {
+                    const [year, month] = ym.split('-');
+                    const date = new Date(parseInt(year), parseInt(month) - 1, 1);
+                    return date.toLocaleDateString(undefined, { month: 'short', year: 'numeric' });
+                });
+                
+                // Create the chart
+                if (window.trendChart) {
+                    window.trendChart.destroy();
+                }
+                
+                window.trendChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: formattedLabels,
+                        datasets: [{
+                            label: 'Issues Created',
+                            data: createdData,
+                            borderColor: 'rgba(54, 162, 235, 1)',
+                            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                            tension: 0.1,
+                            fill: false
+                        }, {
+                            label: 'Issues Resolved',
+                            data: resolvedData,
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            tension: 0.1,
+                            fill: false
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: 'Issue Creation and Resolution Trend'
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                title: {
+                                    display: true,
+                                    text: 'Count'
+                                }
+                            },
+                            x: {
+                                title: {
+                                    display: true,
+                                    text: 'Month'
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Update the cumulative flow chart
+            function updateFlowChart() {
+                const ctx = document.getElementById('flow-chart').getContext('2d');
+                
+                // Get the statuses
+                const statuses = [...new Set(filteredData.map(issue => issue.status))].filter(Boolean);
+                
+                // Get the dates
+                const now = new Date();
+                const threeMonthsAgo = new Date(now.getFullYear(), now.getMonth() - 3, 1);
+                
+                // Create array of all dates
+                const dates = [];
+                let currentDate = new Date(threeMonthsAgo);
+                while (currentDate <= now) {
+                    dates.push(new Date(currentDate));
+                    currentDate.setDate(currentDate.getDate() + 7); // Weekly intervals
+                }
+                
+                // Count issues in each status for each date
+                const datasets = statuses.map(status => {
+                    const data = dates.map(date => {
+                        return filteredData.filter(issue => {
+                            // Issue was created before this date
+                            const wasCreated = issue.created && issue.created <= date;
+                            
+                            // Issue was not resolved before this date OR the issue is in this status
+                            const notResolved = !issue.resolved || issue.resolved > date;
+                            
+                            // Issue is in this status
+                            const inStatus = issue.status === status;
+                            
+                            return wasCreated && notResolved && inStatus;
+                        }).length;
+                    });
+                    
+                    return {
+                        label: status,
+                        data,
+                        fill: true
+                    };
+                });
+                
+                // Assign colors
+                const colors = [
+                    'rgba(255, 99, 132, 0.6)',
+                    'rgba(255, 159, 64, 0.6)',
+                    'rgba(255, 205, 86, 0.6)',
+                    'rgba(75, 192, 192, 0.6)',
+                    'rgba(54, 162, 235, 0.6)',
+                    'rgba(153, 102, 255, 0.6)',
+                    'rgba(201, 203, 207, 0.6)'
+                ];
+                
+                datasets.forEach((dataset, i) => {
+                    dataset.backgroundColor = colors[i % colors.length];
+                });
+                
+                // Format dates for labels
+                const formattedDates = dates.map(date => 
+                    date.toLocaleDateString(undefined, { month: 'short', day: 'numeric' })
+                );
+                
+                // Create the chart
+                if (window.flowChart) {
+                    window.flowChart.destroy();
+                }
+                
+                window.flowChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: formattedDates,
+                        datasets
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: 'Cumulative Flow Diagram'
+                            },
+                            tooltip: {
+                                mode: 'index',
+                                intersect: false
+                            }
+                        },
+                        scales: {
+                            y: {
+                                stacked: true,
+                                beginAtZero: true,
+                                title: {
+                                    display: true,
+                                    text: 'Count'
+                                }
+                            },
+                            x: {
+                                title: {
+                                    display: true,
+                                    text: 'Date'
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Update last updated timestamp
+            function updateLastUpdated() {
+                const now = new Date();
+                document.getElementById('last-updated').textContent = now.toLocaleString();
+            }
+
+            // Event listeners
+            document.getElementById('apply-filters').addEventListener('click', applyFilters);
+            document.getElementById('reset-filters').addEventListener('click', function() {
+                document.getElementById('status-filter').value = 'all';
+                document.getElementById('type-filter').value = 'all';
+                document.getElementById('priority-filter').value = 'all';
+                document.getElementById('date-range').value = 'all';
+                applyFilters();
+            });
+        });
+    </script>
 </body>
 </html>

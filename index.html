@@ -3,37 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Performance Dashboard</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-    
-    <!-- Load React -->
-    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
-    
-    <!-- Load Recharts and its dependencies -->
-    <script src="https://unpkg.com/prop-types/prop-types.min.js"></script>
-    <script src="https://unpkg.com/recharts/umd/Recharts.js"></script>
-    
-    <!-- Load Babel -->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Jira Performance Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.0.1/build/global/luxon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0"></script>
 </head>
-<body class="bg-gray-100">
-    <!-- Navigation -->
-    <div class="nav-container">
-        <div class="nav-content">
-            <div class="nav-title">Performance Reports</div>
-            <div class="nav-links">
-                <a href="index.html" class="nav-link">Dashboard</a>
-                <a href="report.html" class="nav-link">Performance Report</a>
-                <a href="tickets.html" class="nav-link">Grouped Tickets</a>
+<body>
+    <header>
+        <h1>Jira Performance Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Overview</a></li>
+                <li><a href="tickets.html">Ticket Analysis</a></li>
+                <li><a href="report.html">Reports</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="dashboard-container">
+            <div class="kpi-section">
+                <h2>Key Performance Indicators</h2>
+                <div class="kpi-grid">
+                    <div class="kpi-card">
+                        <div class="kpi-title">Total Issues</div>
+                        <div class="kpi-value" id="total-issues">--</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-title">Completion Rate</div>
+                        <div class="kpi-value" id="completion-rate">--</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-title">Avg. Resolution Time</div>
+                        <div class="kpi-value" id="avg-resolution-time">--</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-title">Avg. Lead Time</div>
+                        <div class="kpi-value" id="avg-lead-time">--</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-grid">
+                <div class="chart-container">
+                    <h3>Issue Status Overview</h3>
+                    <canvas id="status-chart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Issue Type Distribution</h3>
+                    <canvas id="issue-type-chart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Sprint Velocity</h3>
+                    <canvas id="velocity-chart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Priority Analysis</h3>
+                    <canvas id="priority-chart"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-grid">
+                <div class="chart-container">
+                    <h3>Team Productivity</h3>
+                    <canvas id="productivity-chart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Cycle Time Trends</h3>
+                    <canvas id="cycle-time-chart"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-grid">
+                <div class="chart-container">
+                    <h3>Workflow Efficiency</h3>
+                    <table id="efficiency-table" class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Workflow Stage</th>
+                                <th>Avg. Time (days)</th>
+                                <th>% of Total Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Data will be inserted here by JS -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="chart-container">
+                    <h3>Issue Aging Report</h3>
+                    <table id="aging-table" class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Status</th>
+                                <th>< 7 days</th>
+                                <th>7-14 days</th>
+                                <th>15-30 days</th>
+                                <th>> 30 days</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Data will be inserted here by JS -->
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
 
-    <div id="root" class="max-w-6xl mx-auto p-4"></div>
-    
+    <footer>
+        <p>Jira Performance Dashboard - Updated: <span id="last-updated"></span></p>
+    </footer>
+
+    <script src="dashboard.js"></script>
     <script src="navigation.js"></script>
-    <script type="text/babel" src="dashboard.js"></script>
 </body>
 </html>
