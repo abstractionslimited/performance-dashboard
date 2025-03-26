@@ -14,6 +14,8 @@ let issueAging = {};
 document.addEventListener('DOMContentLoaded', function() {
     loadJiraData();
     updateLastUpdated();
+    initializeExportButtons();
+    initializeDateFilter();
 });
 
 // Load and process Jira CSV data
@@ -368,6 +370,9 @@ function updateDashboard() {
     // Update tables
     updateEfficiencyTable();
     updateAgingTable();
+    
+    // Generate and update executive summary
+    generateExecutiveSummary();
 }
 
 // Update Key Performance Indicators
@@ -789,4 +794,172 @@ function updateAgingTable() {
 function updateLastUpdated() {
     const now = new Date();
     document.getElementById('last-updated').textContent = now.toLocaleString();
+}
+
+// Generate executive summary
+function generateExecutiveSummary() {
+    // Get key metrics
+    const totalIssues = jiraData.length;
+    const doneIssues = jiraData.filter(issue => 
+        issue.status === 'Done' || issue.status === 'Closed' || issue.status === 'Resolved'
+    ).length;
+    const completionRate = (doneIssues / totalIssues * 100).toFixed(1);
+    
+    // Get most common issue types
+    const issueTypeCounts = Object.entries(countByProperty(jiraData, 'issueType'))
+        .sort((a, b) => b[1] - a[1]);
+    const topIssueTypes = issueTypeCounts.slice(0, 3)
+        .map(([type, count]) => `${type} (${count})`)
+        .join(', ');
+    
+    // Calculate average resolution time
+    let avgResolutionTime = 0;
+    const resolvedIssues = jiraData.filter(issue => issue.resolved && issue.created);
+    
+    if (resolvedIssues.length > 0) {
+        const totalResolutionDays = resolvedIssues.reduce((sum, issue) => {
+            const days = (issue.resolved - issue.created) / (1000 * 60 * 60 * 24);
+            return sum + days;
+        }, 0);
+        
+        avgResolutionTime = (totalResolutionDays / resolvedIssues.length).toFixed(1);
+    }
+    
+    // Get project distribution
+    const projectCounts = Object.entries(countByProperty(jiraData, 'projectName'))
+        .sort((a, b) => b[1] - a[1]);
+    const topProjects = projectCounts.slice(0, 3)
+        .map(([project, count]) => `${project} (${count})`)
+        .join(', ');
+    
+    // Generate summary text
+    const summary = `
+        This dashboard presents an analysis of ${totalIssues} Jira tickets with a completion rate of ${completionRate}%.
+        The average resolution time is ${avgResolutionTime} days. Most tickets are of type ${topIssueTypes},
+        primarily from projects: ${topProjects}. The dashboard shows key performance metrics,
+        issue distributions, and workflow efficiency data to provide a comprehensive view of performance.
+    `;
+    
+    // Update the summary text
+    document.getElementById('summary-text').textContent = summary.replace(/\s+/g, ' ').trim();
+}
+
+// Initialize export buttons
+function initializeExportButtons() {
+    // Export PDF button
+    document.getElementById('export-pdf').addEventListener('click', function() {
+        window.print();
+    });
+    
+    // Export CSV button
+    document.getElementById('export-csv').addEventListener('click', function() {
+        exportTableToCSV('jira_performance_data.csv');
+    });
+}
+
+// Export table to CSV
+function exportTableToCSV(filename) {
+    // Create CSV content
+    let csv = [];
+    
+    // Add headers
+    csv.push(['Key', 'Summary', 'Type', 'Status', 'Project', 'Created', 'Resolved', 'Resolution Days'].join(','));
+    
+    // Add data rows
+    jiraData.forEach(issue => {
+        let row = [
+            issue.key,
+            `"${issue.summary.replace(/"/g, '""')}"`, // Escape quotes in summary
+            issue.issueType,
+            issue.status,
+            issue.projectName,
+            issue.created ? issue.created.toLocaleDateString() : '',
+            issue.resolved ? issue.resolved.toLocaleDateString() : '',
+            issue.resolved && issue.created ? Math.round((issue.resolved - issue.created) / (1000 * 60 * 60 * 24)) : ''
+        ];
+        csv.push(row.join(','));
+    });
+    
+    // Create download link
+    const csvContent = "data:text/csv;charset=utf-8," + csv.join('\n');
+    const encodedUri = encodeURI(csvContent);
+    const link = document.createElement("a");
+    link.setAttribute("href", encodedUri);
+    link.setAttribute("download", filename);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+// Initialize date filter
+function initializeDateFilter() {
+    const dateFilter = document.getElementById('date-filter');
+    
+    dateFilter.addEventListener('change', function() {
+        const selectedValue = this.value;
+        
+        if (selectedValue === 'custom') {
+            // Show date picker for custom range (simplified version)
+            const startDate = prompt('Enter start date (YYYY-MM-DD):', '2025-01-01');
+            const endDate = prompt('Enter end date (YYYY-MM-DD):', new Date().toISOString().split('T')[0]);
+            
+            if (startDate && endDate) {
+                filterDataByDateRange(new Date(startDate), new Date(endDate));
+            } else {
+                // Reset selection if cancelled
+                dateFilter.value = 'all';
+                resetDateFilter();
+            }
+        } else {
+            // Handle predefined ranges
+            const now = new Date();
+            
+            switch (selectedValue) {
+                case 'last30':
+                    const thirtyDaysAgo = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000);
+                    filterDataByDateRange(thirtyDaysAgo, now);
+                    break;
+                case 'last90':
+                    const ninetyDaysAgo = new Date(now.getTime() - 90 * 24 * 60 * 60 * 1000);
+                    filterDataByDateRange(ninetyDaysAgo, now);
+                    break;
+                case 'last180':
+                    const sixMonthsAgo = new Date(now.getTime() - 180 * 24 * 60 * 60 * 1000);
+                    filterDataByDateRange(sixMonthsAgo, now);
+                    break;
+                default:
+                    resetDateFilter();
+                    break;
+            }
+        }
+    });
+}
+
+// Filter data by date range
+function filterDataByDateRange(startDate, endDate) {
+    // Store original data if not already stored
+    if (!window.originalJiraData) {
+        window.originalJiraData = [...jiraData];
+    }
+    
+    // Filter data
+    jiraData = window.originalJiraData.filter(issue => {
+        if (!issue.created) return false;
+        return issue.created >= startDate && issue.created <= endDate;
+    });
+    
+    // Recalculate metrics and update dashboard
+    calculateMetrics();
+    updateDashboard();
+    generateExecutiveSummary();
+}
+
+// Reset date filter
+function resetDateFilter() {
+    if (window.originalJiraData) {
+        jiraData = [...window.originalJiraData];
+        calculateMetrics();
+        updateDashboard();
+        generateExecutiveSummary();
+    }
 }
